@@ -1,48 +1,44 @@
 <script>
-	import bgImage from '$lib/assets/home-background.svg';
 	import workstationImage from '$lib/assets/home-desktop-image.svg';
 
-	let pages = [
-		{ name: 'Home' },
-		{ name: 'Habilidades' },
-		{ name: 'Projetos' },
-		{ name: 'Formação' },
-		{ name: 'Sobre' },
-		{ name: 'Contato' }
-	];
+	const imgConfig = {
+		src: workstationImage,
+		alt: 'Imagem de estação de trabalho'
+	};
 </script>
 
 <div
-	class="flex min-h-screen flex-col justify-between bg-lightblue bg-[url('/home-background.svg')] bg-bottom bg-no-repeat"
+	class="flex flex-col items-center justify-between sm:flex-row md:mx-[100px] md:mt-[50px] lg:mx-[199px] lg:mt-[155px]"
 >
-	<div class="mx-[199px] mt-[155px] flex items-center justify-between">
-		<div>
-			<h1 class="font-poppins text-7xl text-darkblue">Ana Carolina Vollu</h1>
-			<h1 class="font-inter text-2xl tracking-widest text-blue">DESENVOLVEDORA FRONT-END</h1>
-		</div>
-		<div>
-			<img class="" src={workstationImage} alt="Imagem de estação de trabalho" />
-		</div>
-	</div>
-	<div class=" flex justify-center gap-6">
-		<button class="h-[78px] w-[284px] rounded-[47px] bg-blue text-3xl text-offwhite"
-			>PROJETOS</button
+	<div class="flex flex-col items-center justify-between text-center">
+		<h1
+			class="mb-[10px] font-inter text-base uppercase tracking-widest text-blue sm:mb-[10px] sm:text-2xl"
 		>
-		<button class="h-[78px] w-[284px] rounded-[47px] bg-blue text-3xl text-offwhite"
-			>CURRÍCULO</button
-		>
+			Desenvolvedora front-end
+		</h1>
+		<h1 class="font-poppins text-3xl text-darkblue sm:text-7xl">Ana Carolina Vollu</h1>
 	</div>
-	<div class="mb-5 flex gap-[1px] self-center rounded-[47px] bg-candyblue">
-		{#each pages as { name }, i}
-			<button
-				class="rounded-[47px] py-[10.5px] px-[25px] font-poppins text-lg text-blue hover:bg-blue hover:text-candyblue"
-				>{name}</button
-			>
-		{/each}
-	</div>
+	<img class="hidden md:inline-block" src={imgConfig.src} alt={imgConfig.alt} />
+</div>
+<img class="m-auto h-full min-h-0 py-10 md:hidden" src={imgConfig.src} alt={imgConfig.alt} />
+<div class="flex flex-col justify-center gap-6 px-9 sm:my-6 sm:flex-row">
+	<button
+		class="h-[58px] rounded-[47px] bg-blue text-xl uppercase text-offwhite sm:h-[78px] sm:text-3xl"
+		>Projetos</button
+	>
+	<button
+		class="h-[58px] rounded-[47px] bg-blue text-xl uppercase text-offwhite sm:h-[78px] sm:text-3xl"
+		>Currículo</button
+	>
 </div>
 
-<style lang="postcss">
-	:global(html) {
-	}
-</style>
+<!-- <div
+class="mt-[102px] hidden flex-wrap justify-center gap-[1px] self-center rounded-[47px] bg-candyblue py-2 sm:flex lg:mb-5 lg:p-0"
+>
+{#each pages as { name }, i}
+  <button
+    class="rounded-[47px] py-[10.5px] px-[25px] font-poppins text-lg text-blue hover:bg-blue hover:text-candyblue"
+    >{name}</button
+  >
+{/each}
+</div> -->
