@@ -1,0 +1,9 @@
+<script>
+	import menuIcon from '$lib/assets/menu-icon.svg';
+</script>
+
+<div class="absolute mt-3 ml-5 flex self-start sm:hidden">
+	<button on:click class="rounded-[10px] bg-offwhite p-[11px] active:bg-blue">
+		<img src={menuIcon} alt="Ícone do menu" />
+	</button>
+</div>
