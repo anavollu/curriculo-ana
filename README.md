@@ -30,7 +30,9 @@
 
 ## <img src="https://cdn-icons-png.flaticon.com/24/2276/2276313.png" width="20" /> Tecnologias
 
-Sveltekit e Tailwind
+<img src="https://svelte.dev/favicon.png" width="20"> Sveltekit
+</br>
+<img src="https://avatars.githubusercontent.com/u/67109815?s=280&v=4" width="20"> Tailwind
 
 </br>
 
