@@ -11,13 +11,20 @@
 ## <img src="https://cdn-icons-png.flaticon.com/24/2666/2666505.png" width="20" /> Checklist
 
 - [x] Fazer menu
-- [ ] Fazer esqueleto das páginas e linkar com o menu
-- [ ] Fazer página Home
+- [x] Fazer esqueleto das páginas e linkar com o menu
+- [x] Fazer página Home
 - [ ] Fazer página Habilidades
 - [ ] Fazer página Projetos
 - [ ] Fazer página Formação
 - [ ] Fazer página Contato
 - [ ] Fazer responsividade desktop/tablet
+- [ ] Alterar tamanho fixo da imagem na home page para dinâmico
+
+</br>
+
+## <img src="https://cdn-icons-png.flaticon.com/24/3095/3095113.png" width="20" /> Bugs
+
+- [ ] Arrumar comportamento do botão menu
 
 </br>
 
