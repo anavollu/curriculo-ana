@@ -24,7 +24,7 @@
 
 ## <img src="https://cdn-icons-png.flaticon.com/24/3095/3095113.png" width="20" /> Bugs
 
-- [ ] Arrumar comportamento do botão menu
+- [x] Arrumar comportamento do botão menu
 
 </br>
 
