@@ -1,19 +1,14 @@
 <script>
 	import '../app.css';
-	import MenuItems from './menu-items.svelte';
+	import { page } from '$app/stores';
 	import Menu from './menu.svelte';
 
-	let menuOpen = false;
+	$: isHome = $page.url.pathname === '/';
 </script>
 
-<div class="flex h-full flex-col bg-lightblue">
+<div class="flex h-full flex-col" class:bg-offwhite={!isHome} class:bg-lightblue={isHome}>
 	<section class="relative inline-block" />
-	<Menu
-		on:click={() => {
-			menuOpen = !menuOpen;
-		}}
-	/>
-	<MenuItems bind:menuOpen />
+	<Menu />
 
 	<div class="box-border flex h-full flex-col justify-around px-5 pt-[65px] pb-4">
 		<slot />
