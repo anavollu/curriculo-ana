@@ -1,8 +1,11 @@
-<script>
+<script lang="ts">
 	import '../app.css';
 	import { page } from '$app/stores';
 	import Menu from './menu.svelte';
 	import Button from './button.svelte';
+	import type { LayoutServerData } from './$types';
+
+	export let data: LayoutServerData;
 
 	$: isHome = $page.url.pathname === '/';
 </script>
@@ -17,7 +20,7 @@
 			<Menu />
 		</div>
 		{#if !isHome}
-			<Button label="Currículo" page="curriculo" size="small" />
+			<Button label={data.resume.home.secondaryButton} page="curriculo" size="small" />
 		{/if}
 	</div>
 
