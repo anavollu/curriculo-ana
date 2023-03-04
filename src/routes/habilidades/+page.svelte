@@ -1,18 +1,12 @@
-<script>
-	import { onMount } from 'svelte';
-
-	let Carousel;
-	onMount(async () => {
-		const module = await import('svelte-carousel');
-		Carousel = module.default;
-	});
-
+<script lang="ts">
 	import redLine from '$lib/assets/red-line.svg';
 	import htmlIcon from '$lib/assets/html-icon.svg';
 	import cssIcon from '$lib/assets/css-icon.svg';
 	import javascriptIcon from '$lib/assets/javascript-icon.svg';
 	import reactIcon from '$lib/assets/react-icon.svg';
 	import nextJsIcon from '$lib/assets/next-icon.svg';
+	import Carousel from 'svelte-carousel';
+	import { browser } from '$app/environment';
 
 	let frontendTech = [
 		{ name: 'html', icon: htmlIcon },
@@ -37,40 +31,42 @@
 		<img src={redLine} alt="Linha vermelha" />
 	</div>
 
-	<svelte:component this={Carousel} arrows={false}>
-		<div
-			class="flex w-full flex-col items-center rounded-[20px] bg-gradient-to-tr from-candyblue px-16 py-6"
-		>
-			<p
-				class="mb-14 text-center font-poppins text-lg font-bold uppercase tracking-widest text-blue opacity-70"
+	{#if browser}
+		<Carousel arrows={false}>
+			<div
+				class="flex w-full flex-col items-center rounded-[20px] bg-gradient-to-tr from-candyblue px-16 py-6"
 			>
-				Front-end
-			</p>
-			<div class="flex flex-col gap-4">
-				{#each frontendTech as { name, icon }}
-					<div class="flex gap-8 self-start">
-						<img src={icon} alt="Ícone" />
-						<p class="font-poppins text-sm tracking-widest text-blue">{name}</p>
-					</div>
-				{/each}
+				<p
+					class="mb-14 text-center font-poppins text-lg font-bold uppercase tracking-widest text-blue opacity-70"
+				>
+					Front-end
+				</p>
+				<div class="flex flex-col gap-4">
+					{#each frontendTech as { name, icon }}
+						<div class="flex gap-8 self-start">
+							<img src={icon} alt="Ícone" />
+							<p class="font-poppins text-sm tracking-widest text-blue">{name}</p>
+						</div>
+					{/each}
+				</div>
 			</div>
-		</div>
-		<div
-			class="flex w-full flex-col items-center rounded-[20px] bg-gradient-to-tr from-candyblue px-16 py-6"
-		>
-			<p
-				class="mb-14 text-center font-poppins text-lg font-bold uppercase tracking-widest text-blue opacity-70"
+			<div
+				class="flex w-full flex-col items-center rounded-[20px] bg-gradient-to-tr from-candyblue px-16 py-6"
 			>
-				Back-end
-			</p>
-			<div class="flex flex-col gap-4">
-				{#each backendTech as { name, icon }}
-					<div class="flex gap-8 self-start">
-						<img src={icon} alt="Ícone" />
-						<p class="font-poppins text-sm tracking-widest text-blue">{name}</p>
-					</div>
-				{/each}
+				<p
+					class="mb-14 text-center font-poppins text-lg font-bold uppercase tracking-widest text-blue opacity-70"
+				>
+					Back-end
+				</p>
+				<div class="flex flex-col gap-4">
+					{#each backendTech as { name, icon }}
+						<div class="flex gap-8 self-start">
+							<img src={icon} alt="Ícone" />
+							<p class="font-poppins text-sm tracking-widest text-blue">{name}</p>
+						</div>
+					{/each}
+				</div>
 			</div>
-		</div>
-	</svelte:component>
+		</Carousel>
+	{/if}
 </div>
