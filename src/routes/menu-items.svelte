@@ -15,7 +15,7 @@
 {#if menuOpen}
 	<div
 		transition:slide
-		class="absolute top-[68px] ml-5 w-[230px] flex-col justify-center rounded-[10px] bg-candyblue"
+		class="absolute top-[75px] w-[230px] flex-col justify-center rounded-[10px] bg-candyblue"
 	>
 		{#each pages as { name, path }}
 			<button

@@ -5,7 +5,7 @@
 	export let menuOpen = false;
 </script>
 
-<div class="absolute mt-3 ml-5 flex self-start md:hidden">
+<div class="absolute flex self-start md:hidden">
 	<button
 		on:click={() => {
 			menuOpen = !menuOpen;

@@ -12,7 +12,7 @@
 	</button>
 {:else}
 	<button
-		class="w-[137px] rounded-[35px] bg-blue py-3 text-center font-poppins text-xl uppercase text-offwhite hover:bg-darkblue"
+		class="w-[137px] rounded-[35px] bg-blue py-3 text-center font-poppins text-xs uppercase text-offwhite hover:bg-darkblue"
 	>
 		<a href={page}>{label}</a>
 	</button>
