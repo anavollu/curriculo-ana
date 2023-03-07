@@ -10,8 +10,6 @@
 
 	$: isHome = $page.url.pathname === '/';
 
-	console.log('$page', $page);
-
 	$: pageName = data.resume.home.menuPaths[$page.url.pathname]?.name ?? '';
 </script>
 
