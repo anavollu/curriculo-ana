@@ -1,13 +1,7 @@
 <script lang="ts">
 	import { slide } from 'svelte/transition';
 
-	let pages = [
-		{ name: 'Home', path: '/' },
-		{ name: 'Habilidades', path: '/habilidades' },
-		{ name: 'Projetos', path: '/projetos' },
-		{ name: 'Formação', path: 'formacao' },
-		{ name: 'Contato', path: 'contato' }
-	];
+	export let pages: { name: string; path: string }[];
 
 	export let menuOpen = false;
 </script>

@@ -9,8 +9,10 @@
 	export let data: LayoutServerData;
 
 	$: isHome = $page.url.pathname === '/';
-	$: pageName =
-		$page.url.pathname.substring(1) === 'formacao' ? 'formação' : $page.url.pathname.substring(1);
+
+	console.log('$page', $page);
+
+	$: pageName = data.resume.home.menuPaths[$page.url.pathname]?.name ?? '';
 </script>
 
 <div
@@ -20,7 +22,7 @@
 >
 	<div class="flex justify-between px-5 py-4">
 		<div>
-			<Menu />
+			<Menu pages={data.resume.home.menuItems} />
 		</div>
 		{#if !isHome}
 			<Button label={data.resume.home.secondaryButton} page="curriculo" size="small" />

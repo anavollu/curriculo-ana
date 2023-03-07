@@ -1,8 +1,12 @@
-<script>
+<script lang="ts">
 	import menuIcon from '$lib/assets/menu-icon.svg';
 	import MenuItems from './menu-items.svelte';
 
 	export let menuOpen = false;
+	export let pages: {
+		name: string;
+		path: string;
+	}[];
 </script>
 
 <div class="absolute flex self-start md:hidden">
@@ -15,4 +19,4 @@
 		<img src={menuIcon} alt="Ícone do menu" />
 	</button>
 </div>
-<MenuItems bind:menuOpen />
+<MenuItems {pages} bind:menuOpen />

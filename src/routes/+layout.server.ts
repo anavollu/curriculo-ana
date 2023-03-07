@@ -1,5 +1,14 @@
 import type { LayoutServerLoad } from './$types';
 
+const paths: Record<string, { name: string }> = {
+	'/': { name: 'Home' },
+	'/habilidades': { name: 'Habilidades' },
+	'/projetos': { name: 'Projetos' },
+	'/formacao': { name: 'Formação' },
+	'/contato': { name: 'Contato' }
+};
+const items = Object.keys(paths).map((key) => ({ path: key, ...(paths[key] ?? {}) }));
+
 export const load = (async () => {
 	return {
 		resume: {
@@ -8,13 +17,8 @@ export const load = (async () => {
 				description: 'Desenvolvedora front-end',
 				primaryButton: 'Projetos',
 				secondaryButton: 'Currículo',
-				menuItems: [
-					{ name: 'Home', path: '/' },
-					{ name: 'Habilidades', path: '/habilidades' },
-					{ name: 'Projetos', path: '/projetos' },
-					{ name: 'Formação', path: '/formacao' },
-					{ name: 'Contato', path: '/contato' }
-				]
+				menuItems: items,
+				menuPaths: paths
 			},
 			ability: {
 				title: 'Habilidades',
