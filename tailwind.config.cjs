@@ -9,6 +9,7 @@ module.exports = {
 			xl: '1440px'
 		},
 		colors: {
+			white: '#FFFFFF',
 			offwhite: '#F1FAEE',
 			candyblue: '#DEF2E9',
 			lightblue: '#A8DADC',
