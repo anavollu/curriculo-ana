@@ -4,9 +4,9 @@
 	import redLine from '$lib/assets/red-line.svg';
 	import Menu from './menu.svelte';
 	import Button from './button.svelte';
-	import type { LayoutServerData } from './$types';
+	import type { LayoutData } from './$types';
 
-	export let data: LayoutServerData;
+	export let data: LayoutData;
 
 	$: isHome = $page.url.pathname === '/';
 
@@ -29,7 +29,7 @@
 
 	<div class="box-border flex h-full flex-col items-center justify-around px-5 pt-[65px] pb-4">
 		{#if !isHome}
-			<div class="mb-5 flex flex-col text-center">
+			<div class="mb-7 flex flex-col text-center">
 				<p class="font-poppins text-3xl capitalize">
 					{pageName}
 				</p>

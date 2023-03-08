@@ -1,4 +1,9 @@
 import type { LayoutServerLoad } from './$types';
+import htmlIcon from '$lib/assets/html-icon.svg';
+import cssIcon from '$lib/assets/css-icon.svg';
+import javascriptIcon from '$lib/assets/javascript-icon.svg';
+import reactIcon from '$lib/assets/react-icon.svg';
+import nextJsIcon from '$lib/assets/next-icon.svg';
 
 const paths: Record<string, { name: string }> = {
 	'/': { name: 'Home' },
@@ -22,10 +27,31 @@ export const load = (async () => {
 			},
 			ability: {
 				title: 'Habilidades',
-				'front-end': ['html', 'css', 'javascript', 'react', 'next.js'],
-				'basic knowledge': ['node.js', 'golang', 'graphql', 'REST'],
-				learning: ['svelte', 'tailwind'],
-				others: ['mongoDB', 'postgreSQL', 'docker', 'git']
+				carouselItems: {
+					frontend: [
+						{ name: 'html', icon: htmlIcon },
+						{ name: 'css', icon: cssIcon },
+						{ name: 'javascript', icon: javascriptIcon },
+						{ name: 'react', icon: reactIcon },
+						{ name: 'next.js', icon: nextJsIcon }
+					],
+					basicKnowledge: [
+						{ name: 'node.js', icon: nextJsIcon },
+						{ name: 'golang', icon: nextJsIcon },
+						{ name: 'graphql', icon: nextJsIcon },
+						{ name: 'REST', icon: nextJsIcon }
+					],
+					learning: [
+						{ name: 'svelte', icon: nextJsIcon },
+						{ name: 'tailwind', icon: nextJsIcon }
+					],
+					others: [
+						{ name: 'mongoDB', icon: nextJsIcon },
+						{ name: 'postgreSQL', icon: nextJsIcon },
+						{ name: 'docker', icon: nextJsIcon },
+						{ name: 'git', icon: nextJsIcon }
+					]
+				}
 			},
 			projects: {
 				title: 'Projetos',
@@ -68,19 +94,23 @@ export const load = (async () => {
 				title: 'Contato',
 				email: {
 					info: 'acvollu@gmail.com',
-					link: 'acvollu@gmail.com'
+					link: 'acvollu@gmail.com',
+					description: 'copiar email'
 				},
 				github: {
 					info: 'github.com/anavollu',
-					link: 'https://github.com/anavollu'
+					link: 'https://github.com/anavollu',
+					description: 'copiar link'
 				},
 				phone: {
 					info: '21 96970-7589',
-					link: 'https://wa.me/5521969707589'
+					link: 'https://wa.me/5521969707589',
+					description: 'link whatsapp'
 				},
 				linkedin: {
 					info: 'linkedin.com/in/anavollu',
-					link: 'https://www.linkedin.com/in/anavollu/'
+					link: 'https://www.linkedin.com/in/anavollu/',
+					description: 'copiar link'
 				}
 			}
 		}
