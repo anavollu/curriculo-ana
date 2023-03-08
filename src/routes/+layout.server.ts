@@ -1,4 +1,8 @@
 import type { LayoutServerLoad } from './$types';
+import emailIcon from '$lib/assets/email-icon.svg';
+import phoneIcon from '$lib/assets/phone-icon.svg';
+import githubIcon from '$lib/assets/github-icon.svg';
+import linkedinIcon from '$lib/assets/linkedin-icon.svg';
 import htmlIcon from '$lib/assets/html-icon.svg';
 import cssIcon from '$lib/assets/css-icon.svg';
 import javascriptIcon from '$lib/assets/javascript-icon.svg';
@@ -95,22 +99,26 @@ export const load = (async () => {
 				email: {
 					info: 'acvollu@gmail.com',
 					link: 'acvollu@gmail.com',
+					icon: emailIcon,
 					description: 'copiar email'
 				},
 				github: {
 					info: 'github.com/anavollu',
 					link: 'https://github.com/anavollu',
-					description: 'copiar link'
+					icon: githubIcon,
+					description: 'acessar link'
 				},
 				phone: {
 					info: '21 96970-7589',
 					link: 'https://wa.me/5521969707589',
+					icon: phoneIcon,
 					description: 'link whatsapp'
 				},
 				linkedin: {
 					info: 'linkedin.com/in/anavollu',
 					link: 'https://www.linkedin.com/in/anavollu/',
-					description: 'copiar link'
+					icon: linkedinIcon,
+					description: 'acessar link'
 				}
 			}
 		}

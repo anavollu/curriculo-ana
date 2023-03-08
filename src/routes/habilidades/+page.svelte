@@ -10,7 +10,7 @@
 	<Carousel arrows={false}>
 		{#each Object.entries(carouselItems) as tech}
 			<div
-				class="flex w-full flex-col items-center rounded-[20px] bg-gradient-to-tr from-candyblue px-16 py-6"
+				class="flex w-full flex-col items-center rounded-[20px] bg-gradient-to-tr from-candyblue px-16 pt-6 pb-16"
 			>
 				<p
 					class="mb-14 text-center font-poppins text-lg font-bold uppercase tracking-widest text-blue opacity-70"
