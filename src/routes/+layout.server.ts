@@ -8,6 +8,15 @@ import cssIcon from '$lib/assets/css-icon.svg';
 import javascriptIcon from '$lib/assets/javascript-icon.svg';
 import reactIcon from '$lib/assets/react-icon.svg';
 import nextJsIcon from '$lib/assets/next-icon.svg';
+import nodeJsIcon from '$lib/assets/nodejs-icon.svg';
+import graphqlIcon from '$lib/assets/graphql-icon.svg';
+import golangIcon from '$lib/assets/golang-icon.svg';
+import mongodbIcon from '$lib/assets/mongo-icon.svg';
+import postgresqlIcon from '$lib/assets/postgresql-icon.svg';
+import dockerIcon from '$lib/assets/docker-icon.svg';
+import gitIcon from '$lib/assets/git-icon.svg';
+import svelteIcon from '$lib/assets/svelte-icon.svg';
+import tailwindIcon from '$lib/assets/tailwind-icon.svg';
 
 const paths: Record<string, { name: string }> = {
 	'/': { name: 'Home' },
@@ -40,20 +49,19 @@ export const load = (async () => {
 						{ name: 'next.js', icon: nextJsIcon }
 					],
 					basicKnowledge: [
-						{ name: 'node.js', icon: nextJsIcon },
-						{ name: 'golang', icon: nextJsIcon },
-						{ name: 'graphql', icon: nextJsIcon },
-						{ name: 'REST', icon: nextJsIcon }
+						{ name: 'node.js', icon: nodeJsIcon },
+						{ name: 'golang', icon: golangIcon },
+						{ name: 'graphql', icon: graphqlIcon }
 					],
 					learning: [
-						{ name: 'svelte', icon: nextJsIcon },
-						{ name: 'tailwind', icon: nextJsIcon }
+						{ name: 'svelte', icon: svelteIcon },
+						{ name: 'tailwind', icon: tailwindIcon }
 					],
 					others: [
-						{ name: 'mongoDB', icon: nextJsIcon },
-						{ name: 'postgreSQL', icon: nextJsIcon },
-						{ name: 'docker', icon: nextJsIcon },
-						{ name: 'git', icon: nextJsIcon }
+						{ name: 'mongoDB', icon: mongodbIcon },
+						{ name: 'postgreSQL', icon: postgresqlIcon },
+						{ name: 'docker', icon: dockerIcon },
+						{ name: 'git', icon: gitIcon }
 					]
 				}
 			},
