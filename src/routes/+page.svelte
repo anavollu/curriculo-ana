@@ -6,7 +6,7 @@
 	export let data: LayoutServerData;
 </script>
 
-<div class="mx-11 my-9 flex h-full flex-col items-center justify-between">
+<div class="flex h-[calc(100vh-70px)] flex-col items-center justify-evenly px-6 pt-5">
 	<div class="flex flex-col gap-2">
 		<p class="text-center font-inter text-base uppercase tracking-widest text-blue">
 			{data.resume.home.description}
