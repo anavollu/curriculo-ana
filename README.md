@@ -13,7 +13,7 @@
 - [x] Fazer menu
 - [x] Fazer esqueleto das páginas e linkar com o menu
 - [x] Fazer página Home
-- [ ] Fazer página Habilidades
+- [x] Fazer página Habilidades
 - [ ] Fazer página Projetos
 - [ ] Fazer página Formação
 - [ ] Fazer página Contato
