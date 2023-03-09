@@ -41,14 +41,14 @@ export const load = (async () => {
 			ability: {
 				title: 'Habilidades',
 				carouselItems: {
-					frontend: [
+					front_end: [
 						{ name: 'html', icon: htmlIcon },
 						{ name: 'css', icon: cssIcon },
 						{ name: 'javascript', icon: javascriptIcon },
 						{ name: 'react', icon: reactIcon },
 						{ name: 'next.js', icon: nextJsIcon }
 					],
-					basicKnowledge: [
+					basic_knowledge: [
 						{ name: 'node.js', icon: nodeJsIcon },
 						{ name: 'golang', icon: golangIcon },
 						{ name: 'graphql', icon: graphqlIcon }
