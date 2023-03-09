@@ -17,10 +17,10 @@
 				>
 					{tech[0]}
 				</p>
-				<div class="flex flex-col gap-4">
+				<div class="grid grid-flow-row auto-rows-auto gap-5">
 					{#each tech[1] as { name, icon }}
-						<div class="flex gap-8 self-start">
-							<img src={icon} alt="Ícone" />
+						<div class="grid grid-flow-col items-center justify-start gap-8">
+							<img src={icon} alt="Ícone" class="h-[25px] w-[25px]" />
 							<p class="font-poppins text-sm tracking-widest text-blue">{name}</p>
 						</div>
 					{/each}
