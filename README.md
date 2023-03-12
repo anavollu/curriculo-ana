@@ -14,9 +14,9 @@
 - [x] Fazer esqueleto das páginas e linkar com o menu
 - [x] Fazer página Home
 - [x] Fazer página Habilidades
+- [x] Fazer página Contato
 - [ ] Fazer página Projetos
 - [ ] Fazer página Formação
-- [ ] Fazer página Contato
 - [ ] Fazer responsividade desktop/tablet
 - [ ] Alterar tamanho fixo da imagem na home page para dinâmico
 
