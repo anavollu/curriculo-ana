@@ -5,7 +5,7 @@
 </script>
 
 <div class="flex w-full flex-col gap-3">
-	{#each Object.values(contact) as { info, link, icon, description }}
-		<ContactCard {info} {link} {icon} {description} />
+	{#each Object.values(contact) as contactItem}
+		<ContactCard {...contactItem} />
 	{/each}
 </div>

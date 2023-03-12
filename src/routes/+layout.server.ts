@@ -108,25 +108,29 @@ export const load = (async () => {
 					info: 'acvollu@gmail.com',
 					link: 'acvollu@gmail.com',
 					icon: emailIcon,
-					description: 'copiar email'
+					description: 'copiar email',
+					type: 'copy' as const
 				},
 				github: {
 					info: 'github.com/anavollu',
 					link: 'https://github.com/anavollu',
 					icon: githubIcon,
-					description: 'acessar link'
+					description: 'acessar link',
+					type: 'link' as const
 				},
 				phone: {
 					info: '21 96970-7589',
 					link: 'https://wa.me/5521969707589',
 					icon: phoneIcon,
-					description: 'link whatsapp'
+					description: 'link whatsapp',
+					type: 'link' as const
 				},
 				linkedin: {
 					info: 'linkedin.com/in/anavollu',
 					link: 'https://www.linkedin.com/in/anavollu/',
 					icon: linkedinIcon,
-					description: 'acessar link'
+					description: 'acessar link',
+					type: 'link' as const
 				}
 			}
 		}
