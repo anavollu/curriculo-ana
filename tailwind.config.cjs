@@ -22,6 +22,7 @@ module.exports = {
 			inter: ['Inter', 'sans-serif']
 		},
 		letterSpacing: {
+			wider: '.1em',
 			widest: '.3em'
 		},
 		extend: {}

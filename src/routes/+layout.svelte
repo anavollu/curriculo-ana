@@ -27,9 +27,9 @@
 		{/if}
 	</div>
 
-	<div class="flex h-[calc(100vh-70px)] flex-col items-center justify-evenly px-5 pb-4">
+	<div class="flex flex-col items-center px-5 pb-4">
 		{#if !isHome}
-			<div class="flex flex-col text-center">
+			<div class="mb-8 flex flex-col text-center">
 				<p class="font-poppins text-3xl capitalize">
 					{pageName}
 				</p>
