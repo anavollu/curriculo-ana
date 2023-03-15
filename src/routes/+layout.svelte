@@ -10,7 +10,8 @@
 
 	$: isHome = $page.url.pathname === '/';
 
-	$: pageName = data.resume.home.menuPaths[$page.url.pathname]?.name ?? '';
+	$: basePath = '/' + $page.url.pathname.split('/')[1];
+	$: pageName = data.resume.home.menuPaths[basePath].name;
 </script>
 
 <div

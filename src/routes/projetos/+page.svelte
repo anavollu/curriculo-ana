@@ -5,7 +5,7 @@
 </script>
 
 <div class="flex w-full flex-col gap-9">
-	{#each Object.values(projects) as projectItem}
-		<ProjectCard {...projectItem} />
+	{#each Object.entries(projects) as [path, projectItem]}
+		<ProjectCard {path} name={projectItem.name} image={projectItem.image} />
 	{/each}
 </div>
