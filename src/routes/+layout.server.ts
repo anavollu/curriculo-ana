@@ -74,7 +74,9 @@ export const load = (async () => {
 					description: 'Site inspirado na pokédex para exibir informações dos Pokémons',
 					technologies: ['react', 'next.js'],
 					vercelLink: 'https://pokemon-next-lake.vercel.app/',
-					gitHubLink: 'https://github.com/anavollu/pokemon-next'
+					gitHubLink: 'https://github.com/anavollu/pokemon-next',
+					figmaLink:
+						'https://www.figma.com/file/my6CKR5L2w8v4WneaTURQZ/Projeto-Intro-ao-React-(Pok%C3%A9mon)?node-id=196%3A1418&t=xyKOo3WGzdnGabOY-1'
 				}
 			},
 			education: {
