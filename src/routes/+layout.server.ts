@@ -69,23 +69,8 @@ export const load = (async () => {
 				title: 'Projetos',
 				pokemon: {
 					name: 'Pokémon Info App',
-					image: '$lib/assets/pokemon-next.png',
-					description: 'Site inspirado na pokédex para exibir informações dos Pokémons',
-					technologies: ['react', 'next.js'],
-					vercelLink: 'https://pokemon-next-lake.vercel.app/',
-					gitHubLink: 'https://github.com/anavollu/pokemon-next'
-				},
-				pokemon2: {
-					name: 'Pokémon Info App',
-					image: '$lib/assets/pokemon-next.png',
-					description: 'Site inspirado na pokédex para exibir informações dos Pokémons',
-					technologies: ['react', 'next.js'],
-					vercelLink: 'https://pokemon-next-lake.vercel.app/',
-					gitHubLink: 'https://github.com/anavollu/pokemon-next'
-				},
-				pokemon3: {
-					name: 'Pokémon Info App',
-					image: '$lib/assets/pokemon-next.png',
+					image:
+						'https://raw.githubusercontent.com/anavollu/pokemon-next/main/prints/pokemon-next-pagina-inicial.png',
 					description: 'Site inspirado na pokédex para exibir informações dos Pokémons',
 					technologies: ['react', 'next.js'],
 					vercelLink: 'https://pokemon-next-lake.vercel.app/',
