@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ProjectCard from '../project-card.svelte';
+	import ProjectCard from './project-card.svelte';
 	export let data;
 	const { title, ...projects } = data.resume.projects;
 </script>

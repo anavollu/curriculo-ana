@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ContactCard from '../contact-card.svelte';
+	import ContactCard from './contact-card.svelte';
 	export let data;
 	const { title, ...contact } = data.resume.contact;
 </script>
