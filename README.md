@@ -16,7 +16,8 @@
 - [x] Fazer página Habilidades
 - [x] Fazer página Contato
 - [x] Fazer página Projetos
-- [ ] Fazer página Formação
+- [x] Fazer página Formação
+- [ ] Fazer página Currículo
 - [ ] Fazer responsividade desktop/tablet
 - [ ] Alterar tamanho fixo da imagem na home page para dinâmico
 
