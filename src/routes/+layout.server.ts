@@ -48,16 +48,16 @@ export const load = (async () => {
 						{ name: 'react', icon: reactIcon },
 						{ name: 'next.js', icon: nextJsIcon }
 					],
-					basic_knowledge: [
+					conhecimento_básico: [
 						{ name: 'node.js', icon: nodeJsIcon },
 						{ name: 'golang', icon: golangIcon },
 						{ name: 'graphql', icon: graphqlIcon }
 					],
-					learning: [
+					aprendendo: [
 						{ name: 'svelte', icon: svelteIcon },
 						{ name: 'tailwind', icon: tailwindIcon }
 					],
-					others: [
+					outros: [
 						{ name: 'mongoDB', icon: mongodbIcon },
 						{ name: 'postgreSQL', icon: postgresqlIcon },
 						{ name: 'docker', icon: dockerIcon },
