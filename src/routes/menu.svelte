@@ -24,7 +24,7 @@
 <div class="xs:hidden lg:flex lg:rounded-[30px] lg:bg-candyblue">
 	{#each pages as page}
 		<button
-			class="rounded-[30px] px-[25px] py-[10.5px] font-poppins text-lg hover:bg-blue hover:text-offwhite active:bg-blue active:text-offwhite"
+			class="rounded-[30px] px-[25px] py-[10.5px] font-poppins text-lg text-blue hover:bg-blue hover:text-offwhite active:bg-blue active:text-offwhite"
 			>{page.name}</button
 		>
 	{/each}
