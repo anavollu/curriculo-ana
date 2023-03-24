@@ -15,28 +15,33 @@
 </script>
 
 <div
-	class="flex h-auto min-h-full flex-col"
+	class="m-auto flex h-full flex-col overflow-hidden"
 	class:bg-offwhite={!isHome}
 	class:bg-lightblue={isHome}
 >
-	<div class="flex justify-between px-5 py-4">
-		<div>
-			<Menu pages={data.resume.home.menuItems} />
-		</div>
-		{#if !isHome}
-			<Button label={data.resume.home.secondaryButton} page="curriculo" size="small" />
-		{/if}
-	</div>
-
-	<div class="flex flex-col items-center px-5 pb-4">
-		{#if !isHome}
-			<div class="mb-8 flex flex-col text-center">
-				<p class="font-poppins text-3xl capitalize">
-					{pageName}
-				</p>
-				<img src={redLine} alt="Linha vermelha" />
+	<div class="max-w-[1536px]">
+		<div class="flex justify-between px-5 py-4 lg:hidden">
+			<div>
+				<Menu pages={data.resume.home.menuItems} />
 			</div>
-		{/if}
-		<slot />
+			{#if !isHome}
+				<Button label={data.resume.home.secondaryButton} page="curriculo" size="small" />
+			{/if}
+		</div>
+
+		<div class="my-[29px] flex flex-col items-center px-5">
+			{#if !isHome}
+				<div class="mb-8 flex flex-col text-center">
+					<p class="font-poppins text-3xl capitalize">
+						{pageName}
+					</p>
+					<img src={redLine} alt="Linha vermelha" />
+				</div>
+			{/if}
+			<slot />
+			<div class="hidden lg:inline">
+				<Menu pages={data.resume.home.menuItems} />
+			</div>
+		</div>
 	</div>
 </div>
