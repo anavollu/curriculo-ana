@@ -14,12 +14,8 @@
 	$: pageName = data.resume.home.menuPaths[basePath].name;
 </script>
 
-<div
-	class="m-auto flex h-full flex-col overflow-hidden"
-	class:bg-offwhite={!isHome}
-	class:bg-lightblue={isHome}
->
-	<div class="max-w-[1536px]">
+<div class="flex min-h-full flex-col overflow-hidden">
+	<div class="mx-auto w-full max-w-[1440px]">
 		<div class="flex justify-between px-5 py-4 lg:hidden">
 			<div>
 				<Menu pages={data.resume.home.menuItems} />
@@ -45,3 +41,9 @@
 		</div>
 	</div>
 </div>
+
+<style lang="postcss">
+	:global(html) {
+		@apply bg-offwhite;
+	}
+</style>
