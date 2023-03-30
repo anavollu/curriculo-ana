@@ -15,7 +15,7 @@
 
 {#if project}
 	<div
-		class="text-poppins flex flex-col gap-2 self-start leading-[30px] text-blue lg:overflow-scroll"
+		class="text-poppins flex flex-col gap-2 self-start leading-[30px] text-blue lg:overflow-y-scroll"
 	>
 		<ProjectCard {path} name={project.name} image={project.image} />
 		<div class="mt-[13px] flex flex-col gap-1">

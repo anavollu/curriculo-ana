@@ -3,7 +3,7 @@
 	const { title, ...education } = data.resume.education;
 </script>
 
-<div class="w-full border-r-[1px] border-r-lightblue pl-[14px] lg:overflow-scroll">
+<div class="w-full border-r-[1px] border-r-lightblue pl-[14px] lg:overflow-y-scroll">
 	<div class="flex w-full flex-col items-center gap-12 text-center font-inter tracking-widest">
 		{#each Object.values(education) as educationItem}
 			<div class="flex w-full justify-between">
