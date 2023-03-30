@@ -2,6 +2,7 @@
 	import '../app.css';
 	import { page } from '$app/stores';
 	import redLine from '$lib/assets/red-line.svg';
+	import homeBg from '$lib/assets/home-bg.svg';
 	import Menu from './menu.svelte';
 	import Button from './button.svelte';
 	import type { LayoutData } from './$types';
@@ -15,7 +16,7 @@
 </script>
 
 <div class="flex min-h-full flex-col overflow-hidden">
-	<div class="mx-auto w-full max-w-[1440px]">
+	<div class="z-10 mx-auto w-full max-w-[1440px]">
 		<div class="flex justify-between px-5 py-4 lg:hidden">
 			<div>
 				<Menu pages={data.resume.home.menuItems} />
@@ -40,6 +41,9 @@
 			</div>
 		</div>
 	</div>
+	{#if isHome}
+		<img class="absolute bottom-0 w-full" src={homeBg} alt="Background" />
+	{/if}
 </div>
 
 <style lang="postcss">
