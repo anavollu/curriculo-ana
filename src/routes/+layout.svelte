@@ -25,7 +25,7 @@
 			{/if}
 		</div>
 
-		<div class="my-[29px] flex flex-col items-center px-5">
+		<div class="my-[29px] flex h-[92vh] flex-col items-center justify-between px-5">
 			{#if !isHome}
 				<div class="mb-8 flex flex-col text-center">
 					<p class="font-poppins text-3xl capitalize">
@@ -35,7 +35,7 @@
 				</div>
 			{/if}
 			<slot />
-			<div class="hidden lg:inline">
+			<div class="mt-3 hidden lg:inline">
 				<Menu pages={data.resume.home.menuItems} />
 			</div>
 		</div>
