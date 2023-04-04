@@ -9,12 +9,12 @@
 	}[];
 </script>
 
-<div class="absolute flex self-start lg:hidden">
+<div class="flex self-start lg:hidden">
 	<button
 		on:click={() => {
 			menuOpen = !menuOpen;
 		}}
-		class="rounded-[10px] bg-offwhite p-[11px] active:bg-blue"
+		class="rounded-[10px] bg-offwhite p-[11px]  active:bg-blue"
 	>
 		<img src={menuIcon} alt="Ícone do menu" />
 	</button>

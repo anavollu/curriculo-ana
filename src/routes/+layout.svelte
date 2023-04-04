@@ -17,7 +17,7 @@
 
 <div class="flex min-h-full flex-col overflow-hidden">
 	<div class="z-10 mx-auto w-full max-w-[1440px]">
-		<div class="flex items-center justify-between px-5 py-4 lg:px-12 lg:pt-6 lg:pb-0">
+		<div class="flex items-center justify-between px-5 pt-4 lg:px-12 lg:pt-6">
 			<div class="lg:hidden">
 				<Menu pages={data.resume.home.menuItems} />
 			</div>
