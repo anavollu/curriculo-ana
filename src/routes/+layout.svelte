@@ -42,7 +42,7 @@
 		</div>
 	</div>
 	{#if isHome}
-		<img class="absolute bottom-0 w-full" src={homeBg} alt="Background" />
+		<img class="absolute bottom-0 hidden w-full lg:inline" src={homeBg} alt="Background" />
 	{/if}
 </div>
 
