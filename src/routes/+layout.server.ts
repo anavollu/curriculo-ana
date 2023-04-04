@@ -78,6 +78,17 @@ export const load = (async () => {
 					gitHubLink: 'https://github.com/anavollu/pokemon-next',
 					figmaLink:
 						'https://www.figma.com/file/my6CKR5L2w8v4WneaTURQZ/Projeto-Intro-ao-React-(Pok%C3%A9mon)?node-id=196%3A1418&t=xyKOo3WGzdnGabOY-1'
+				},
+				resume: {
+					name: 'Currículo',
+					image:
+						'https://raw.githubusercontent.com/anavollu/curriculo-ana/main/static/curriculo-ana.png',
+					description: 'Site com minhas informações profissionais e formação',
+					technologies: ['svelte', 'tailwind'],
+					vercelLink: 'https://curriculo-ana-rho.vercel.app/',
+					gitHubLink: 'https://github.com/anavollu/curriculo-ana',
+					figmaLink:
+						'https://www.figma.com/file/AR93wnXDPmoCPfwxui0I68/Resume-Ana-Carolina-Vollu?node-id=92%3A1329&t=ypkH6oXutK9UXVdM-1'
 				}
 			},
 			education: {
