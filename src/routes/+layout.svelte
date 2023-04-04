@@ -34,7 +34,7 @@
 			{/if}
 		</div>
 
-		<div class="my-[29px] flex flex-col items-center justify-between px-5 lg:h-[85vh]">
+		<div class="my-[29px] flex flex-col items-center justify-between px-5 lg:h-[78vh]">
 			{#if !isHome}
 				<div class="mb-8 flex flex-col text-center">
 					<p class="font-poppins text-3xl capitalize">
