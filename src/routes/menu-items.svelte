@@ -13,14 +13,16 @@
 	>
 		{#each pages as { name, path }}
 			{#if name !== 'Currículo'}
-				<button
-					on:click={() => {
-						menuOpen = !menuOpen;
-					}}
-					class="w-full rounded-[10px] py-[10.5px] px-[25px] font-poppins text-lg text-blue hover:bg-blue hover:text-candyblue"
-				>
-					<a href={path}>{name}</a>
-				</button>
+				<a href={path}>
+					<button
+						on:click={() => {
+							menuOpen = !menuOpen;
+						}}
+						class="w-full rounded-[10px] py-[10.5px] px-[25px] font-poppins text-lg text-blue hover:bg-blue hover:text-candyblue"
+					>
+						{name}
+					</button>
+				</a>
 			{/if}
 		{/each}
 	</div>
