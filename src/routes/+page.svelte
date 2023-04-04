@@ -6,15 +6,16 @@
 	export let data: LayoutServerData;
 </script>
 
-<div id="home-container" class="flex flex-col items-center justify-evenly px-6">
+<div
+	id="home-container"
+	class="flex h-[85vh] flex-col items-center justify-around px-6 lg:justify-start lg:gap-16"
+>
 	<div class="flex flex-col items-center gap-8 lg:flex-row lg:justify-between">
 		<div class="flex flex-col gap-2 lg:min-w-[455px] lg:flex-col-reverse lg:items-start">
-			<p
-				class="text-center font-inter text-base uppercase tracking-widest text-blue lg:text-xl xl:text-2xl"
-			>
+			<p class="text-center font-inter text-base uppercase tracking-widest text-blue lg:text-xl">
 				{data.resume.home.description}
 			</p>
-			<p class="text-center font-poppins text-3xl text-darkblue lg:text-5xl xl:text-6xl">
+			<p class="text-center font-poppins text-3xl text-darkblue lg:text-5xl">
 				{data.resume.home.title}
 			</p>
 		</div>
