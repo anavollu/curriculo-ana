@@ -15,7 +15,7 @@
 {:else}
 	<a
 		href={page === 'curriculo' ? pdfResume : page}
-		class="w-[135px] rounded-[35px] bg-blue py-3 text-center font-poppins text-xs uppercase leading-4 text-offwhite hover:bg-darkblue lg:rounded-[28.58px] lg:py-4 lg:text-[14px]"
+		class="w-[135px] rounded-[35px] bg-blue py-3 px-7 text-center font-poppins text-xs uppercase leading-4 text-offwhite hover:bg-darkblue lg:rounded-[28.58px] lg:py-4 lg:text-[14px]"
 	>
 		{label}
 	</a>

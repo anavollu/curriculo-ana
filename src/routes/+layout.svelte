@@ -17,16 +17,24 @@
 
 <div class="flex min-h-full flex-col overflow-hidden">
 	<div class="z-10 mx-auto w-full max-w-[1440px]">
-		<div class="flex justify-between px-5 py-4 lg:hidden">
-			<div>
+		<div class="flex items-center justify-between px-5 py-4 lg:px-12 lg:pt-6 lg:pb-0">
+			<div class="lg:hidden">
 				<Menu pages={data.resume.home.menuItems} />
 			</div>
 			{#if !isHome}
+				<div
+					class="hidden font-inter uppercase leading-[19.36px] tracking-widest text-blue lg:inline"
+				>
+					Ana Carolina Vollu
+				</div>
 				<Button label={data.resume.home.secondaryButton} page="curriculo" size="small" />
+			{/if}
+			{#if isHome}
+				<div class="hidden lg:inline lg:h-12" />
 			{/if}
 		</div>
 
-		<div class="my-[29px] flex flex-col items-center justify-between px-5 lg:h-[92vh]">
+		<div class="my-[29px] flex flex-col items-center justify-between px-5 lg:h-[85vh]">
 			{#if !isHome}
 				<div class="mb-8 flex flex-col text-center">
 					<p class="font-poppins text-3xl capitalize">

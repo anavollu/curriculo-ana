@@ -6,7 +6,7 @@
 	export let data: LayoutServerData;
 </script>
 
-<div id="home-container" class="flex h-[85vh] flex-col items-center justify-evenly py-6 px-6">
+<div id="home-container" class="flex flex-col items-center justify-evenly py-6 px-6">
 	<div class="flex flex-col items-center gap-8 lg:flex-row lg:justify-between">
 		<div class="flex flex-col gap-2 lg:min-w-[455px] lg:flex-col-reverse lg:items-start">
 			<p
