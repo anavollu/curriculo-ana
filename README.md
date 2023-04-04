@@ -27,6 +27,7 @@
 
 - [x] Arrumar comportamento do botão menu
 - [x] Carousel fica na frente do menuItems. Arrumar z-index.
+- [ ] Arrumar comportamento de active dos botões menu nas versões desktop
 
 </br>
 
