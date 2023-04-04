@@ -23,7 +23,8 @@ const paths: Record<string, { name: string }> = {
 	'/habilidades': { name: 'Habilidades' },
 	'/projetos': { name: 'Projetos' },
 	'/formacao': { name: 'Formação' },
-	'/contato': { name: 'Contato' }
+	'/contato': { name: 'Contato' },
+	'/curriculo': { name: 'Currículo' }
 };
 const items = Object.keys(paths).map((key) => ({ path: key, ...(paths[key] ?? {}) }));
 
