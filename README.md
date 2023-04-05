@@ -17,9 +17,9 @@
 - [x] Fazer página Contato
 - [x] Fazer página Projetos
 - [x] Fazer página Formação
-- [ ] Fazer página Currículo
+- [x] Fazer página Currículo
 - [ ] Fazer responsividade desktop/tablet
-- [ ] Alterar tamanho fixo da imagem na home page para dinâmico
+- [x] Alterar tamanho fixo da imagem na home page para dinâmico
 
 </br>
 
