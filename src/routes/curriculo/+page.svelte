@@ -46,24 +46,24 @@
 		</div>
 	</div>
 	<div class="mb-5 flex flex-col gap-3">
-		<p class="leading-10 text-darkblue">{projectTitle}</p>
+		<p class="text-xl leading-10 text-darkblue">{projectTitle}</p>
 		<div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
 			{#each Object.entries(projects) as [_, projectItem]}
-				<div class="flex flex-col gap-1">
+				<div class="flex flex-col gap-3">
 					<img
-						class="h-[57px] w-[100px]"
+						class="h-auto max-w-[360px]"
 						src={projectItem.image}
 						alt={`Imagem ${projectItem.name}`}
 					/>
-					<p class="text-[10px] uppercase leading-[15px] tracking-widest text-blue">
+					<p class="text-sm font-medium uppercase leading-[15px] tracking-widest text-darkblue">
 						{projectItem.name}
 					</p>
-					<p class="text-[8px] leading-[12px] tracking-widest text-blue">
+					<p class="text-xs leading-[12px] tracking-widest text-darkblue">
 						{projectItem.description}
 					</p>
 					<a
 						href={projectItem.vercelLink}
-						class="text-[8px] leading-[12px] tracking-widest text-blue underline"
+						class="text-xs leading-[12px] tracking-widest text-blue underline"
 					>
 						{projectItem.vercelLink}
 					</a>
@@ -71,6 +71,7 @@
 			{/each}
 		</div>
 	</div>
+	<!-- formação -->
 	<div class="mb-5 flex flex-col gap-3">
 		<p class="text-xl leading-10 text-darkblue">{educationTitle}</p>
 		<div class="grid grid-cols-1">
