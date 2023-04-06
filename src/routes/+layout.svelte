@@ -15,9 +15,9 @@
 	$: pageName = data.resume.home.menuPaths[basePath].name;
 </script>
 
-<div class="flex min-h-full flex-col overflow-hidden">
+<div class="flex min-h-full flex-col">
 	<div class="z-10 mx-auto w-full max-w-[1000px]">
-		<div class="flex items-center justify-between px-5 pt-4 lg:px-12 lg:pt-6">
+		<div class="flex items-center justify-between px-5 pt-4 print:hidden lg:px-12 lg:pt-6">
 			<div class="lg:hidden">
 				<Menu pages={data.resume.home.menuItems} />
 			</div>
@@ -34,7 +34,7 @@
 			{/if}
 		</div>
 
-		<div class="my-[29px] flex flex-col items-center justify-between px-5 lg:h-[78vh]">
+		<div class="my-[29px] flex flex-col items-center justify-between px-5 lg:min-h-[78vh]">
 			{#if !isHome}
 				<div class="mb-8 flex flex-col text-center">
 					<p class="font-poppins text-3xl capitalize">

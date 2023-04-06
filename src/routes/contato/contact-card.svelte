@@ -7,10 +7,10 @@
 	export let isResumePage: boolean;
 </script>
 
-<div class="box-content flex w-full">
+<div class="relative flex w-full">
 	<img class="absolute" width={isResumePage ? 15 : 40} src={icon} alt="Ícone" />
 	{#if isResumePage}
-		<div class="w-full rounded-[10px] bg-white py-3 text-center">
+		<div class="mx-1 mt-1 w-full rounded-[10px] bg-white py-3 text-center">
 			<a
 				target="_blank"
 				rel="noreferrer"

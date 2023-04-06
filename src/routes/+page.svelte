@@ -8,7 +8,7 @@
 
 <div
 	id="home-container"
-	class="flex h-[85vh] flex-col items-center justify-around px-6 lg:justify-start lg:gap-16"
+	class="flex flex-col items-center justify-around px-6 lg:justify-start lg:gap-16"
 >
 	<div class="flex flex-col items-center gap-8 lg:flex-row lg:justify-between">
 		<div class="flex flex-col gap-2 lg:min-w-[455px] lg:flex-col-reverse lg:items-start">

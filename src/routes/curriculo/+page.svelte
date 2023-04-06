@@ -10,9 +10,7 @@
 	const { title: contactTitle, ...contact } = data.resume.contact;
 </script>
 
-<div
-	class="flex flex-col overflow-y-scroll px-7 pt-7 pb-[23px] font-poppins lg:h-[842px] lg:w-[595px]"
->
+<div class="flex flex-col bg-offwhite px-3 pt-7 pb-[23px] font-poppins print:w-[595px] lg:px-7">
 	<div class="mb-5 flex flex-col gap-2">
 		<p class="text-3xl text-darkblue">{home.title}</p>
 		<p class="font-inter uppercase leading-[19px] tracking-widest text-blue">{home.description}</p>
@@ -27,11 +25,11 @@
 	</div>
 	<div class="mb-5 flex flex-col gap-4">
 		<p class="leading-10 text-darkblue">{abilityTitle}</p>
-		<div class="grid grid-cols-2 gap-1 lg:grid-cols-4">
+		<div class="grid grid-cols-2 gap-2 print:grid-cols-4">
 			{#each Object.entries(carouselItems) as [techName, techAbilities]}
 				<div class="flex flex-col gap-2">
 					<p
-						class=" break-words text-[11px] font-bold uppercase leading-[16.5px] tracking-widest text-blue opacity-70"
+						class="text-[11px] font-bold uppercase leading-[16.5px] tracking-widest text-blue opacity-70"
 					>
 						{techName.replace('_', ' ')}
 					</p>
@@ -75,17 +73,25 @@
 	</div>
 	<div class="mb-5">
 		<p class="leading-10 text-darkblue">{educationTitle}</p>
-		<div class="grid grid-cols-2 gap-2">
+		<div class="grid grid-cols-2">
 			{#each Object.values(education) as educationItem}
-				<div class="flex flex-col">
-					<p class="text-[10px] font-medium uppercase leading-[15px] tracking-widest text-darkblue">
-						{educationItem.name}
-					</p>
-					<p class="text-[8px] leading-[12px] tracking-widest text-red">{educationItem.type}</p>
-					<p class="text-[8px] leading-[12px] tracking-widest text-darkblue">
-						{educationItem.institution}
-					</p>
-					<p class="text-[8px] leading-[12px] tracking-widest text-blue">{educationItem.year}</p>
+				<div class="flex items-center border-l-[1px] border-lightblue">
+					<div class="flex items-center">
+						<div class="h-[1px] w-[20px] bg-lightblue" />
+						<div class="h-[5px] w-[5px] rounded-full bg-lightblue" />
+					</div>
+					<div class="flex flex-col p-2">
+						<p
+							class="text-[10px] font-medium uppercase leading-[15px] tracking-widest text-darkblue"
+						>
+							{educationItem.name}
+						</p>
+						<p class="text-[8px] leading-[12px] tracking-widest text-red">{educationItem.type}</p>
+						<p class="text-[8px] leading-[12px] tracking-widest text-darkblue">
+							{educationItem.institution}
+						</p>
+						<p class="text-[8px] leading-[12px] tracking-widest text-blue">{educationItem.year}</p>
+					</div>
 				</div>
 			{/each}
 		</div>
