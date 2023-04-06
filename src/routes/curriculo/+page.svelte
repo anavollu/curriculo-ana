@@ -61,10 +61,7 @@
 					<p class="text-sm leading-4 text-darkblue">
 						{projectItem.description}
 					</p>
-					<a
-						href={projectItem.vercelLink}
-						class="text-xs leading-[12px] tracking-widest text-blue underline"
-					>
+					<a href={projectItem.vercelLink} class="text-xs leading-[12px] text-blue underline">
 						{projectItem.vercelLink}
 					</a>
 				</div>

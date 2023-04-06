@@ -15,7 +15,7 @@
 				target="_blank"
 				rel="noreferrer"
 				href={link}
-				class="text-sm leading-[9px] tracking-widest text-darkblue"
+				class="text-sm leading-[9px] tracking-wider text-darkblue"
 			>
 				{info}
 			</a>
