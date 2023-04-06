@@ -4,30 +4,44 @@
 	export let link: string;
 	export let icon: string;
 	export let description: string;
+	export let isResumePage: boolean;
 </script>
 
-<div class="flex w-full">
-	<img class="absolute" width={40} src={icon} alt="Ícone" />
-	<div
-		class="mx-6 mt-2 grid w-full grid-cols-1 gap-1 break-words rounded-2xl bg-white py-8 text-center"
-	>
-		<p class="font-poppins text-sm tracking-widest text-darkblue">{info}</p>
-		{#if type === 'link'}
+<div class="box-content flex w-full">
+	<img class="absolute" width={isResumePage ? 15 : 40} src={icon} alt="Ícone" />
+	{#if isResumePage}
+		<div class="w-full rounded-[10px] bg-white py-3 text-center">
 			<a
 				target="_blank"
 				rel="noreferrer"
-				class="font-poppins text-sm tracking-widest text-red"
 				href={link}
+				class="text-[6px] leading-[9px] tracking-widest text-darkblue"
 			>
-				{description}
+				{info}
 			</a>
-		{:else}
-			<button
-				class="font-poppins text-sm tracking-widest text-red"
-				on:click={() => {
-					navigator.clipboard.writeText(info);
-				}}>{description}</button
-			>
-		{/if}
-	</div>
+		</div>
+	{:else}
+		<div
+			class="mx-6 mt-2 grid w-full grid-cols-1 gap-1 break-words rounded-2xl bg-white py-8 text-center"
+		>
+			<p class="font-poppins text-sm tracking-widest text-darkblue">{info}</p>
+			{#if type === 'link'}
+				<a
+					target="_blank"
+					rel="noreferrer"
+					class="font-poppins text-sm tracking-widest text-red"
+					href={link}
+				>
+					{description}
+				</a>
+			{:else}
+				<button
+					class="font-poppins text-sm tracking-widest text-red"
+					on:click={() => {
+						navigator.clipboard.writeText(info);
+					}}>{description}</button
+				>
+			{/if}
+		</div>
+	{/if}
 </div>

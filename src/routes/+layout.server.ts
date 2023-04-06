@@ -54,7 +54,7 @@ export const load = (async () => {
 						{ name: 'golang', icon: golangIcon },
 						{ name: 'graphql', icon: graphqlIcon }
 					],
-					aprendendo: [
+					estudando: [
 						{ name: 'svelte', icon: svelteIcon },
 						{ name: 'tailwind', icon: tailwindIcon }
 					],
