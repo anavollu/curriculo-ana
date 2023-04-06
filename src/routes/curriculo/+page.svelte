@@ -96,9 +96,9 @@
 			{/each}
 		</div>
 	</div>
-	<div>
-		<p class="leading-10 text-darkblue">{contactTitle}</p>
-		<div class="grid grid-cols-2 gap-5 lg:grid-cols-4">
+	<div class="flex flex-col gap-3">
+		<p class="text-xl leading-10 text-darkblue">{contactTitle}</p>
+		<div class="grid grid-cols-1 gap-3 lg:grid-cols-4">
 			{#each Object.values(contact) as contactItem}
 				<ContactCard {...contactItem} isResumePage={true} />
 			{/each}
