@@ -24,20 +24,20 @@
 		</p>
 	</div>
 	<div class="mb-5 flex flex-col gap-4">
-		<p class="leading-10 text-darkblue">{abilityTitle}</p>
-		<div class="grid grid-cols-2 gap-2 print:grid-cols-4">
+		<p class="text-xl leading-10 text-darkblue">{abilityTitle}</p>
+		<div class="grid grid-cols-1 gap-7 print:grid-cols-4">
 			{#each Object.entries(carouselItems) as [techName, techAbilities]}
-				<div class="flex flex-col gap-2">
+				<div class="flex flex-col gap-4">
 					<p
-						class="text-[11px] font-bold uppercase leading-[16.5px] tracking-widest text-blue opacity-70"
+						class="text-sm font-bold uppercase leading-[16.5px] tracking-widest text-blue opacity-70"
 					>
 						{techName.replace('_', ' ')}
 					</p>
-					<div class="flex flex-col gap-2">
+					<div class="flex flex-col gap-3">
 						{#each techAbilities as { name, icon }}
 							<div class="flex items-center gap-4">
-								<img class="h-[15px] w-[15px]" src={icon} alt={`Ícone ${name}`} />
-								<p class="text-[10px] leading-[15px] tracking-widest text-blue">{name}</p>
+								<img class="h-[24px] w-[24px]" src={icon} alt={`Ícone ${name}`} />
+								<p class="text-sm leading-[15px] tracking-widest text-blue">{name}</p>
 							</div>
 						{/each}
 					</div>
@@ -45,7 +45,8 @@
 			{/each}
 		</div>
 	</div>
-	<div class="mb-5 flex flex-col gap-3">
+	<!-- projeto -->
+	<div class="mb-5 flex flex-col gap-4">
 		<p class="text-xl leading-10 text-darkblue">{projectTitle}</p>
 		<div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
 			{#each Object.entries(projects) as [_, projectItem]}
@@ -72,7 +73,7 @@
 		</div>
 	</div>
 	<!-- formação -->
-	<div class="mb-5 flex flex-col gap-3">
+	<div class="mb-5 flex flex-col gap-4">
 		<p class="text-xl leading-10 text-darkblue">{educationTitle}</p>
 		<div class="grid grid-cols-1">
 			{#each Object.values(education) as educationItem}
@@ -96,7 +97,7 @@
 		</div>
 	</div>
 	<!-- contato -->
-	<div class="flex flex-col gap-3">
+	<div class="flex flex-col gap-4">
 		<p class="text-xl leading-10 text-darkblue">{contactTitle}</p>
 		<div class="grid grid-cols-1 gap-3 lg:grid-cols-4">
 			{#each Object.values(contact) as contactItem}
