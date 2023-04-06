@@ -71,31 +71,30 @@
 			{/each}
 		</div>
 	</div>
-	<div class="mb-5">
-		<p class="leading-10 text-darkblue">{educationTitle}</p>
-		<div class="grid grid-cols-2">
+	<div class="mb-5 flex flex-col gap-3">
+		<p class="text-xl leading-10 text-darkblue">{educationTitle}</p>
+		<div class="grid grid-cols-1">
 			{#each Object.values(education) as educationItem}
-				<div class="flex items-center border-l-[1px] border-lightblue">
+				<div class="flex items-center gap-2 border-l-[1px] border-lightblue py-1">
 					<div class="flex items-center">
 						<div class="h-[1px] w-[20px] bg-lightblue" />
-						<div class="h-[5px] w-[5px] rounded-full bg-lightblue" />
+						<div class="h-[10px] w-[10px] rounded-full bg-lightblue" />
 					</div>
-					<div class="flex flex-col p-2">
-						<p
-							class="text-[10px] font-medium uppercase leading-[15px] tracking-widest text-darkblue"
-						>
+					<div class="flex flex-col gap-2 p-2">
+						<p class="text-sm font-medium uppercase leading-[15px] tracking-widest text-darkblue">
 							{educationItem.name}
 						</p>
-						<p class="text-[8px] leading-[12px] tracking-widest text-red">{educationItem.type}</p>
-						<p class="text-[8px] leading-[12px] tracking-widest text-darkblue">
+						<p class="text-xs leading-[12px] tracking-widest text-red">{educationItem.type}</p>
+						<p class="text-xs leading-[12px] tracking-widest text-darkblue">
 							{educationItem.institution}
 						</p>
-						<p class="text-[8px] leading-[12px] tracking-widest text-blue">{educationItem.year}</p>
+						<p class="text-xs leading-[12px] tracking-widest text-blue">{educationItem.year}</p>
 					</div>
 				</div>
 			{/each}
 		</div>
 	</div>
+	<!-- contato -->
 	<div class="flex flex-col gap-3">
 		<p class="text-xl leading-10 text-darkblue">{contactTitle}</p>
 		<div class="grid grid-cols-1 gap-3 lg:grid-cols-4">
