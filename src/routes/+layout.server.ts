@@ -31,6 +31,11 @@ const items = Object.keys(paths).map((key) => ({ path: key, ...(paths[key] ?? {}
 export const load = (async () => {
 	return {
 		resume: {
+			about: {
+				title: 'Sobre mim',
+				description:
+					'Iniciei minha carreira em TI na área de suporte. Trabalhei na área de dados com ETL, integração de sistemas. Decidi mudar de carreira e iniciar na programação. Hoje estou aprendendo Svelte e Tailwind.'
+			},
 			home: {
 				title: 'Ana Carolina Vollu',
 				description: 'Desenvolvedora front-end',

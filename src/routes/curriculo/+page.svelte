@@ -2,6 +2,7 @@
 	import ContactCard from '../contato/contact-card.svelte';
 
 	export let data;
+	const about = data.resume.about;
 	const home = data.resume.home;
 	const abilityTitle = data.resume.ability.title;
 	const carouselItems = data.resume.ability.carouselItems;
@@ -13,16 +14,14 @@
 <div class="flex flex-col bg-offwhite px-3 pt-7 pb-[23px] font-poppins print:w-[595px] lg:px-7">
 	<div class="mb-5 flex flex-col gap-2">
 		<p class="text-3xl text-darkblue">{home.title}</p>
-		<p class="font-inter uppercase leading-[19px] tracking-widest text-blue">{home.description}</p>
+		<p class="font-inter uppercase leading-[19px] tracking-wider text-blue">{home.description}</p>
 	</div>
-	<div class="mb-5 flex flex-col gap-4">
-		<p class="leading-10 text-darkblue">Sobre mim</p>
-		<p class="text-[10px] leading-[15px] tracking-widest text-blue">
-			Iniciei minha carreira em TI na área de suporte. Trabalhei na área de dados com ETL,
-			integração de sistemas. Decidi mudar de carreira e iniciar na programação. Hoje estou
-			aprendendo Svelte e Tailwind.
-		</p>
+	<!-- sobre mim -->
+	<div class="mb-5 flex flex-col gap-3">
+		<p class="text-xl leading-10 text-darkblue">{about.title}</p>
+		<p class="text-sm leading-5 text-darkblue">{about.description}</p>
 	</div>
+	<!-- habilidade -->
 	<div class="mb-5 flex flex-col gap-4">
 		<p class="text-xl leading-10 text-darkblue">{abilityTitle}</p>
 		<div class="grid grid-cols-1 gap-7 print:grid-cols-4">
@@ -59,7 +58,7 @@
 					<p class="text-sm font-medium uppercase leading-[15px] tracking-widest text-darkblue">
 						{projectItem.name}
 					</p>
-					<p class="text-xs leading-[12px] tracking-widest text-darkblue">
+					<p class="text-sm leading-4 text-darkblue">
 						{projectItem.description}
 					</p>
 					<a
