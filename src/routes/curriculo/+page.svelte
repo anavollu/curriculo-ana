@@ -12,7 +12,7 @@
 </script>
 
 <div
-	class="flex flex-col bg-offwhite px-3 pt-7 pb-[23px] font-poppins print:w-[595px] lg:gap-3 lg:px-7"
+	class="flex flex-col bg-offwhite px-3 pt-7 pb-[23px] font-poppins print:w-[595px] print:gap-7 lg:gap-3 lg:px-7"
 >
 	<div class="mb-5 flex flex-col gap-2">
 		<p class="text-3xl text-darkblue">{home.title}</p>
@@ -21,7 +21,7 @@
 	<!-- sobre mim -->
 	<div class="mb-5 flex flex-col gap-3">
 		<p class="text-xl leading-10 text-darkblue lg:text-2xl">{about.title}</p>
-		<p class="text-sm leading-5 text-darkblue lg:text-base">{about.description}</p>
+		<p class="text-sm leading-5 text-darkblue print:text-lg lg:text-base">{about.description}</p>
 	</div>
 	<!-- habilidade -->
 	<div class="mb-5 flex flex-col gap-4">
@@ -34,7 +34,9 @@
 					>
 						{techName.replace('_', ' ')}
 					</p>
-					<div class="flex flex-col gap-3 lg:grid lg:grid-cols-5 lg:gap-7">
+					<div
+						class="flex flex-col gap-3 print:grid print:grid-cols-3 lg:grid lg:grid-cols-5 lg:gap-7"
+					>
 						{#each techAbilities as { name, icon }}
 							<div class="flex gap-4 lg:flex lg:items-center lg:gap-2">
 								<img class="h-[24px] w-[24px]" src={icon} alt={`Ícone ${name}`} />
@@ -47,9 +49,9 @@
 		</div>
 	</div>
 	<!-- projeto -->
-	<div class="mb-5 flex flex-col gap-4">
-		<p class="text-xl leading-10 text-darkblue lg:text-2xl">{projectTitle}</p>
-		<div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
+	<div class="mb-5 flex flex-col gap-4 print:order-last print:break-before-page print:gap-7">
+		<p class="text-xl leading-10 text-darkblue print:text-3xl lg:text-2xl">{projectTitle}</p>
+		<div class="grid grid-cols-1 gap-10 print:gap-20 lg:grid-cols-2">
 			{#each Object.entries(projects) as [_, projectItem]}
 				<div class="flex flex-col gap-3">
 					<img
@@ -57,13 +59,18 @@
 						src={projectItem.image}
 						alt={`Imagem ${projectItem.name}`}
 					/>
-					<p class="text-sm font-medium uppercase leading-[15px] tracking-widest text-darkblue">
+					<p
+						class="text-sm font-medium uppercase leading-[15px] tracking-widest text-darkblue print:text-lg"
+					>
 						{projectItem.name}
 					</p>
-					<p class="text-sm leading-4 text-darkblue lg:text-base">
+					<p class="text-sm leading-4 text-darkblue print:text-lg lg:text-base">
 						{projectItem.description}
 					</p>
-					<a href={projectItem.vercelLink} class="text-xs leading-[12px] text-blue underline">
+					<a
+						href={projectItem.vercelLink}
+						class="text-xs leading-[12px] text-blue underline print:text-base"
+					>
 						{projectItem.vercelLink}
 					</a>
 				</div>
@@ -71,7 +78,7 @@
 		</div>
 	</div>
 	<!-- formação -->
-	<div class="mb-5 flex flex-col gap-4">
+	<div class="mb-5 flex flex-col gap-4 print:break-before-page">
 		<p class="text-xl leading-10 text-darkblue lg:text-2xl">{educationTitle}</p>
 		<div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-y-4 lg:gap-x-8">
 			{#each Object.values(education) as educationItem}
@@ -98,7 +105,9 @@
 	</div>
 	<!-- contato -->
 	<div class="flex flex-col gap-4">
-		<p class="text-xl leading-10 text-darkblue lg:text-2xl">{contactTitle}</p>
+		<p class="text-xl leading-10 text-darkblue lg:text-2xl">
+			{contactTitle}
+		</p>
 		<div class="grid grid-cols-1 gap-3 lg:grid-cols-2">
 			{#each Object.values(contact) as contactItem}
 				<ContactCard {...contactItem} isResumePage={true} />
