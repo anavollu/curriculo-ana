@@ -16,11 +16,11 @@
 </script>
 
 <div class="flex min-h-full flex-col">
-	<div class="z-10 mx-auto w-full max-w-[1000px]">
+	<div class="relative z-10 mx-auto w-full max-w-[1000px]">
 		<div
 			class:lg:invisible={isHome}
 			class:bg-offwhite={!isHome}
-			class="sticky top-0 flex items-center justify-between bg-lightblue px-5 py-2 print:hidden lg:px-12 lg:py-4"
+			class="sticky top-0 z-20 flex items-center justify-between bg-lightblue px-5 py-2 print:hidden lg:px-12 lg:py-4"
 		>
 			<div class="lg:hidden">
 				<Menu pages={data.resume.home.menuItems} />
