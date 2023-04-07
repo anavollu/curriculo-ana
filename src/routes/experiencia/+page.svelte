@@ -15,9 +15,9 @@
 					<p class="mb-1 font-poppins text-base font-bold uppercase text-darkblue lg:text-lg">
 						{experienceItem.position}
 					</p>
-					<p class="text-sm text-red lg:text-base">{experienceItem.company}</p>
-					<p class="text-xs text-blue lg:text-sm">{experienceItem.description}</p>
-					<p class="text-sm text-lightblue lg:text-base">{experienceItem.year}</p>
+					<p class="text-sm tracking-wider text-red lg:text-base">{experienceItem.company}</p>
+					<p class="text-xs tracking-wider text-blue lg:text-sm">{experienceItem.description}</p>
+					<p class="text-sm text-opacityblue lg:text-base">{experienceItem.year}</p>
 				</div>
 			</div>
 		{/each}
