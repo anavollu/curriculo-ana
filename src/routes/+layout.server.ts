@@ -22,6 +22,7 @@ const paths: Record<string, { name: string }> = {
 	'/': { name: 'Home' },
 	'/habilidades': { name: 'Habilidades' },
 	'/projetos': { name: 'Projetos' },
+	'/experiencia': { name: 'Experiência' },
 	'/formacao': { name: 'Formação' },
 	'/contato': { name: 'Contato' },
 	'/curriculo': { name: 'Currículo' }
@@ -94,6 +95,37 @@ export const load = (async () => {
 					gitHubLink: 'https://github.com/anavollu/curriculo-ana',
 					figmaLink:
 						'https://www.figma.com/file/AR93wnXDPmoCPfwxui0I68/Resume-Ana-Carolina-Vollu?node-id=92%3A1329&t=ypkH6oXutK9UXVdM-1'
+				}
+			},
+			experience: {
+				title: 'Experiência profissional',
+				one: {
+					company: 'Rede Globo',
+					position: 'Aprendiz Assistente Administrativo',
+					description:
+						'Ajudar na organização de treinamentos, fazer orçamentos, manter contato com outros setores, logística de materiais para treinamentos.',
+					year: '2014-2015'
+				},
+				two: {
+					company: 'Fundação Euclides da Cunha',
+					position: 'Bolsista e Auxiliar de Tecnologia da Informação',
+					description:
+						'Suporte a TI, uso do PowerBI para relatórios de desempenho da equipe, uso do Redmine para acompanhamento e organização das atividades da equipe, metodologia Agile, estudo de melhores tecnologias para implementar na empresa como Google GSuite.',
+					year: '2017-2019'
+				},
+				three: {
+					company: 'IBM',
+					position: 'Estagiária e Analista de BI',
+					description:
+						'Desenvolvimento de interfaces para integração de sistemas e testes unitários no Informatica PowerCenter, SQL, elaboração de documento técnico do que será desenvolvido, shell script, metodologia Agile.',
+					year: '2020-2021'
+				},
+				four: {
+					company: '-',
+					position: 'Freelancer em desenvolvimento',
+					description:
+						'Desenvolvimento e manutenção de sites com tecnologias Javascript, React, MongoDB, Git, Wordpress. Vi um pouco de Golang, GraphQL e GCP.',
+					year: '2022-2023'
 				}
 			},
 			education: {
