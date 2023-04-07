@@ -100,11 +100,11 @@ export const load = (async () => {
 			experience: {
 				title: 'Experiência profissional',
 				one: {
-					company: 'Fundação Euclides da Cunha',
-					position: 'Bolsista e Auxiliar de Tecnologia da Informação',
+					company: '',
+					position: 'Freelancer em desenvolvimento',
 					description:
-						'Suporte a TI, uso do PowerBI para relatórios de desempenho da equipe, uso do Redmine para acompanhamento e organização das atividades da equipe, metodologia Agile, estudo de melhores tecnologias para implementar na empresa como Google GSuite.',
-					year: '2017-2019'
+						'Desenvolvimento e manutenção de sites com tecnologias Javascript, React, MongoDB, Git, Wordpress. Vi um pouco de Golang, GraphQL e GCP.',
+					year: '2022-2023'
 				},
 				two: {
 					company: 'IBM',
@@ -114,11 +114,11 @@ export const load = (async () => {
 					year: '2020-2021'
 				},
 				three: {
-					company: '',
-					position: 'Freelancer em desenvolvimento',
+					company: 'Fundação Euclides da Cunha',
+					position: 'Bolsista e Auxiliar de Tecnologia da Informação',
 					description:
-						'Desenvolvimento e manutenção de sites com tecnologias Javascript, React, MongoDB, Git, Wordpress. Vi um pouco de Golang, GraphQL e GCP.',
-					year: '2022-2023'
+						'Suporte a TI, uso do PowerBI para relatórios de desempenho da equipe, uso do Redmine para acompanhamento e organização das atividades da equipe, metodologia Agile, estudo de melhores tecnologias para implementar na empresa como Google GSuite.',
+					year: '2017-2019'
 				}
 			},
 			education: {
