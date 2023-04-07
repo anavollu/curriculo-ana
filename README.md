@@ -1,6 +1,6 @@
 # Currículo
 
-## <img src="https://cdn-icons-png.flaticon.com/24/595/595067.png" width="20" /> Em andamento <img src="https://cdn-icons-png.flaticon.com/24/595/595067.png" width="20" />
+## Concluído <img src="https://cdn-icons-png.flaticon.com/512/4315/4315445.png" width="20" />
 
 </br>
 
@@ -18,7 +18,7 @@
 - [x] Fazer página Projetos
 - [x] Fazer página Formação
 - [x] Fazer página Currículo
-- [ ] Fazer responsividade desktop/tablet
+- [x] Fazer responsividade desktop/tablet
 - [x] Alterar tamanho fixo da imagem na home page para dinâmico
 
 </br>
@@ -27,7 +27,7 @@
 
 - [x] Arrumar comportamento do botão menu
 - [x] Carousel fica na frente do menuItems. Arrumar z-index.
-- [ ] Arrumar comportamento de active dos botões menu nas versões desktop
+- [x] Arrumar comportamento de active dos botões menu nas versões desktop
 
 </br>
 
