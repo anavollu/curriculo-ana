@@ -100,27 +100,20 @@ export const load = (async () => {
 			experience: {
 				title: 'Experiência profissional',
 				one: {
-					company: 'Rede Globo',
-					position: 'Aprendiz Assistente Administrativo',
-					description:
-						'Ajudar na organização de treinamentos, fazer orçamentos, manter contato com outros setores, logística de materiais para treinamentos.',
-					year: '2014-2015'
-				},
-				two: {
 					company: 'Fundação Euclides da Cunha',
 					position: 'Bolsista e Auxiliar de Tecnologia da Informação',
 					description:
 						'Suporte a TI, uso do PowerBI para relatórios de desempenho da equipe, uso do Redmine para acompanhamento e organização das atividades da equipe, metodologia Agile, estudo de melhores tecnologias para implementar na empresa como Google GSuite.',
 					year: '2017-2019'
 				},
-				three: {
+				two: {
 					company: 'IBM',
 					position: 'Estagiária e Analista de BI',
 					description:
 						'Desenvolvimento de interfaces para integração de sistemas e testes unitários no Informatica PowerCenter, SQL, elaboração de documento técnico do que será desenvolvido, shell script, metodologia Agile.',
 					year: '2020-2021'
 				},
-				four: {
+				three: {
 					company: '-',
 					position: 'Freelancer em desenvolvimento',
 					description:
