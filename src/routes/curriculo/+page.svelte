@@ -6,6 +6,7 @@
 	const home = data.resume.home;
 	const abilityTitle = data.resume.ability.title;
 	const carouselItems = data.resume.ability.carouselItems;
+	const { title: experienceTitle, ...experience } = data.resume.experience;
 	const { title: projectTitle, ...projects } = data.resume.projects;
 	const { title: educationTitle, ...education } = data.resume.education;
 	const { title: contactTitle, ...contact } = data.resume.contact;
@@ -23,54 +24,38 @@
 		<p class="text-xl leading-10 text-darkblue lg:text-2xl">{about.title}</p>
 		<p class="text-sm leading-5 text-darkblue print:text-lg lg:text-base">{about.description}</p>
 	</div>
-	<!-- habilidade -->
+	<!-- experiência -->
 	<div class="mb-5 flex flex-col gap-4">
-		<p class="text-xl leading-10 text-darkblue lg:text-2xl">{abilityTitle}</p>
-		<div class="grid grid-cols-1 gap-7">
-			{#each Object.entries(carouselItems) as [techName, techAbilities]}
-				<div class="flex flex-col gap-4">
-					<p class="text-sm font-bold uppercase leading-[16.5px] tracking-widest text-opacityblue">
-						{techName.replace('_', ' ')}
-					</p>
-					<div
-						class="flex flex-col gap-3 print:grid print:grid-cols-3 lg:grid lg:grid-cols-5 lg:gap-7"
-					>
-						{#each techAbilities as { name, icon }}
-							<div class="flex gap-4 lg:flex lg:items-center lg:gap-2">
-								<img class="h-[24px] w-[24px]" src={icon} alt={`Ícone ${name}`} />
-								<p class="text-sm leading-[15px] tracking-widest text-blue">{name}</p>
-							</div>
-						{/each}
+		<p class="text-xl leading-10 text-darkblue lg:text-2xl">{experienceTitle}</p>
+		<div class="grid grid-cols-1">
+			{#each Object.values(experience) as experienceItem}
+				<div
+					class="flex items-center gap-2 border-l-[1px] border-lightblue py-1 lg:items-start lg:border-none"
+				>
+					<div class="flex items-center lg:hidden">
+						<div class="h-[1px] w-[20px] bg-lightblue" />
+						<div class="h-[10px] w-[10px] rounded-full bg-lightblue" />
 					</div>
-				</div>
-			{/each}
-		</div>
-	</div>
-	<!-- projeto -->
-	<div class="mb-5 flex flex-col gap-4 print:order-last print:break-before-page print:gap-7">
-		<p class="text-xl leading-10 text-darkblue print:text-3xl lg:text-2xl">{projectTitle}</p>
-		<div class="grid grid-cols-1 gap-10 print:gap-20 lg:grid-cols-2">
-			{#each Object.entries(projects) as [_, projectItem]}
-				<div class="flex flex-col gap-3">
-					<img
-						class="h-auto max-w-[360px] lg:max-h-[170px] lg:min-h-[170px] lg:max-w-[fit-content]"
-						src={projectItem.image}
-						alt={`Imagem ${projectItem.name}`}
-					/>
-					<p
-						class="text-sm font-medium uppercase leading-[15px] tracking-widest text-darkblue print:text-lg"
-					>
-						{projectItem.name}
-					</p>
-					<p class="text-sm leading-4 text-darkblue print:text-lg lg:text-base">
-						{projectItem.description}
-					</p>
-					<a
-						href={projectItem.vercelLink}
-						class="text-xs leading-[12px] text-blue underline print:text-base"
-					>
-						{projectItem.vercelLink}
-					</a>
+					<div class="flex flex-col gap-2 p-2 lg:gap-3 lg:px-0">
+						<p class="text-sm font-medium uppercase leading-[15px] tracking-wider text-darkblue">
+							{experienceItem.position}
+						</p>
+						<p
+							class="text-xs tracking-wider text-red print:text-sm print:leading-4 lg:text-sm lg:leading-4"
+						>
+							{experienceItem.company}
+						</p>
+						<p
+							class="text-xs tracking-wider text-darkblue print:text-sm print:leading-4 lg:text-sm lg:leading-4"
+						>
+							{experienceItem.description}
+						</p>
+						<p
+							class="text-xs tracking-widest text-blue print:text-sm print:leading-4 lg:text-sm lg:leading-4"
+						>
+							{experienceItem.year}
+						</p>
+					</div>
 				</div>
 			{/each}
 		</div>
@@ -97,6 +82,58 @@
 						</p>
 						<p class="text-xs leading-[12px] tracking-widest text-blue">{educationItem.year}</p>
 					</div>
+				</div>
+			{/each}
+		</div>
+	</div>
+	<!-- habilidade -->
+	<div class="mb-5 flex flex-col gap-4">
+		<p class="text-xl leading-10 text-darkblue lg:text-2xl">{abilityTitle}</p>
+		<div class="grid grid-cols-1 gap-7">
+			{#each Object.entries(carouselItems) as [techName, techAbilities]}
+				<div class="flex flex-col gap-4">
+					<p class="text-sm font-bold uppercase leading-[16.5px] tracking-widest text-opacityblue">
+						{techName.replace('_', ' ')}
+					</p>
+					<div
+						class="flex flex-col gap-3 print:grid print:grid-cols-3 lg:grid lg:grid-cols-5 lg:gap-7"
+					>
+						{#each techAbilities as { name, icon }}
+							<div class="flex items-center gap-4 lg:flex lg:gap-2">
+								<img class="h-[24px] w-[24px]" src={icon} alt={`Ícone ${name}`} />
+								<p class="text-sm leading-[15px] tracking-widest text-blue">{name}</p>
+							</div>
+						{/each}
+					</div>
+				</div>
+			{/each}
+		</div>
+	</div>
+	<!-- projeto -->
+	<div class="mb-5 flex flex-col gap-4 print:break-before-page">
+		<p class="text-xl leading-10 text-darkblue lg:text-2xl">{projectTitle}</p>
+		<div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
+			{#each Object.entries(projects) as [_, projectItem]}
+				<div class="flex flex-col gap-3">
+					<img
+						class="h-auto max-w-[360px] print:hidden lg:max-h-[170px] lg:min-h-[170px] lg:max-w-[fit-content]"
+						src={projectItem.image}
+						alt={`Imagem ${projectItem.name}`}
+					/>
+					<p
+						class="text-sm font-medium uppercase leading-[15px] tracking-widest text-darkblue print:tracking-wider"
+					>
+						{projectItem.name}
+					</p>
+					<p class="text-sm leading-4 text-darkblue lg:text-base">
+						{projectItem.description}
+					</p>
+					<a
+						href={projectItem.vercelLink}
+						class="text-xs leading-[12px] text-blue underline print:text-base"
+					>
+						{projectItem.vercelLink}
+					</a>
 				</div>
 			{/each}
 		</div>

@@ -114,7 +114,7 @@ export const load = (async () => {
 					year: '2020-2021'
 				},
 				three: {
-					company: '-',
+					company: '',
 					position: 'Freelancer em desenvolvimento',
 					description:
 						'Desenvolvimento e manutenção de sites com tecnologias Javascript, React, MongoDB, Git, Wordpress. Vi um pouco de Golang, GraphQL e GCP.',
