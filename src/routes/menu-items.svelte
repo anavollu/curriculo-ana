@@ -9,7 +9,7 @@
 {#if menuOpen}
 	<div
 		transition:slide
-		class="absolute top-[75px] z-10 w-[230px] flex-col justify-center rounded-[10px] bg-candyblue"
+		class="absolute top-[68px] z-10 w-[230px] flex-col justify-center rounded-[10px] bg-candyblue"
 	>
 		{#each pages as { name, path }}
 			{#if name !== 'Currículo'}
