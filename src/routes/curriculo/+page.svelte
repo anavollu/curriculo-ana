@@ -150,3 +150,13 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	@page {
+		size: A4;
+		margin: 0;
+		-webkit-print-color-adjust: exact;
+		color-adjust: exact;
+		print-color-adjust: exact;
+	}
+</style>
