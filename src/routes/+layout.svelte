@@ -17,7 +17,10 @@
 
 <div class="flex min-h-full flex-col">
 	<div class="z-10 mx-auto w-full max-w-[1000px]">
-		<div class="flex items-center justify-between px-5 pt-4 print:hidden lg:px-12 lg:pt-6">
+		<div
+			class:lg:invisible={isHome}
+			class="sticky top-0 flex items-center justify-between bg-offwhite px-5 py-2 print:hidden lg:px-12 lg:py-4"
+		>
 			<div class="lg:hidden">
 				<Menu pages={data.resume.home.menuItems} />
 			</div>
@@ -34,6 +37,10 @@
 						<button
 							class="border-1 w-[100px] rounded-[35px] border border-blue py-3 px-4 text-center font-poppins text-xs uppercase leading-4 text-blue hover:border-darkblue hover:text-darkblue lg:w-[135px] lg:rounded-[28.58px] lg:py-4 lg:text-[14px]"
 							on:click={() => {
+								if (history.length <= 1) {
+									window.location.pathname = '/';
+									return;
+								}
 								history.back();
 							}}>Voltar</button
 						>

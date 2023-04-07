@@ -29,9 +29,7 @@
 		<div class="grid grid-cols-1 gap-7">
 			{#each Object.entries(carouselItems) as [techName, techAbilities]}
 				<div class="flex flex-col gap-4">
-					<p
-						class="text-sm font-bold uppercase leading-[16.5px] tracking-widest text-blue opacity-70"
-					>
+					<p class="text-sm font-bold uppercase leading-[16.5px] tracking-widest text-opacityblue">
 						{techName.replace('_', ' ')}
 					</p>
 					<div
