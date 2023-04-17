@@ -5,7 +5,7 @@
 </script>
 
 <div class="flex flex-col">
-	<button class="flex flex-col items-center text-left">
+	<button class="flex flex-col text-left">
 		<a href="/projetos/{path}">
 			<img
 				class="mb-[10.25px] h-auto w-full rounded-[10px] md:max-h-[170px] md:w-auto lg:max-h-[220px]"

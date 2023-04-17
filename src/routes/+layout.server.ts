@@ -88,13 +88,24 @@ export const load = (async () => {
 				resume: {
 					name: 'Currículo',
 					image:
-						'https://raw.githubusercontent.com/anavollu/curriculo-ana/main/static/curriculo-ana.png',
+						'https://raw.githubusercontent.com/anavollu/curriculo-ana/main/static/pagina_desktop.png',
 					description: 'Site com minhas informações profissionais e formação',
 					technologies: ['svelte', 'tailwind'],
-					vercelLink: 'https://curriculo-ana-rho.vercel.app/',
+					vercelLink: 'https://ana-vollu.vercel.app/',
 					gitHubLink: 'https://github.com/anavollu/curriculo-ana',
 					figmaLink:
 						'https://www.figma.com/file/AR93wnXDPmoCPfwxui0I68/Resume-Ana-Carolina-Vollu?node-id=92%3A1329&t=ypkH6oXutK9UXVdM-1'
+				},
+				cynthia: {
+					name: 'Cynthia Vollu',
+					image:
+						'https://raw.githubusercontent.com/anavollu/site-cynthia/main/figma-images/pagina_desktop.png',
+					description: 'Site para maquiadora e hair stylist Cynthia Vollu',
+					technologies: ['svelte', 'tailwind'],
+					vercelLink: 'https://cynthia-vollu.vercel.app/',
+					gitHubLink: 'https://github.com/anavollu/site-cynthia',
+					figmaLink:
+						'https://www.figma.com/file/9lUb0kqCM9ijs5DLALz5sl/Site-Cynthia-Vollu?node-id=117-18&t=NMsaNu5T9fbAPkTG-0'
 				}
 			},
 			experience: {

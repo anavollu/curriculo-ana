@@ -41,4 +41,4 @@
 
 ## <img src="https://cdn-icons-png.flaticon.com/24/5050/5050273.png" width="20" /> Deploy na Vercel
 
-- [Link da aplicação](https://curriculo-ana-rho.vercel.app/)
+- [Link da aplicação](https://ana-vollu.vercel.app/)
