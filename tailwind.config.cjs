@@ -25,15 +25,6 @@ module.exports = {
 		letterSpacing: {
 			wider: '.1em',
 			widest: '.3em'
-		},
-		animation: {
-			slide: 'slide 3s linear'
-		},
-		keyframes: {
-			slide: {
-				from: { top: 0 },
-				to: { top: '-100%' }
-			}
 		}
 	},
 	extend: {},
