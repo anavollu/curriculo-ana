@@ -17,7 +17,9 @@
 	<div
 		class="text-poppins flex w-full flex-col gap-2 self-start leading-[30px] text-blue lg:overflow-y-auto"
 	>
-		<ProjectCard {path} name={project.name} image={project.image} />
+		<div class="max-w-[450px]">
+			<ProjectCard {path} name={project.name} image={project.image} />
+		</div>
 		<div class="mt-[13px] flex flex-col gap-1">
 			<p class="uppercase">Descrição</p>
 			<p class="text-sm text-black">{project.description}</p>
