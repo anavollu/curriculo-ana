@@ -15,7 +15,7 @@
 
 {#if project}
 	<div
-		class="text-poppins flex flex-col gap-2 self-start leading-[30px] text-blue lg:overflow-y-auto"
+		class="text-poppins flex w-full flex-col gap-2 self-start leading-[30px] text-blue lg:overflow-y-auto"
 	>
 		<ProjectCard {path} name={project.name} image={project.image} />
 		<div class="mt-[13px] flex flex-col gap-1">
@@ -33,11 +33,21 @@
 				Versão <span class="text-red">Live</span>
 			</a>
 			<br />
-			<a href={project.gitHubLink} target="_blank" rel="noreferrer">
+			<a
+				href={project.gitHubLink}
+				class={project.gitHubLink === '' ? 'hidden' : 'inline'}
+				target="_blank"
+				rel="noreferrer"
+			>
 				Código no <span class="text-red">GitHub</span>
 			</a>
 			<br />
-			<a href={project.figmaLink} target="_blank" rel="noreferrer">
+			<a
+				href={project.figmaLink}
+				class={project.figmaLink === '' ? 'hidden' : 'inline'}
+				target="_blank"
+				rel="noreferrer"
+			>
 				Desenho no <span class="text-red">Figma</span>
 			</a>
 		</div>

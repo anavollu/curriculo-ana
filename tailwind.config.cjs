@@ -26,7 +26,16 @@ module.exports = {
 			wider: '.1em',
 			widest: '.3em'
 		},
-		extend: {}
+		animation: {
+			slide: 'slide 3s linear infinite'
+		},
+		keyframes: {
+			slide: {
+				from: { top: 0 },
+				to: { top: '-100%' }
+			}
+		}
 	},
+	extend: {},
 	plugins: []
 };

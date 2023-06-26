@@ -76,8 +76,7 @@ export const load = (async () => {
 				title: 'Projetos',
 				pokemon: {
 					name: 'Pokémon Info App',
-					image:
-						'https://raw.githubusercontent.com/anavollu/pokemon-next/main/prints/pokemon-next-pagina-inicial.png',
+					image: '/site-pokemon.png',
 					description: 'Site inspirado na pokédex para exibir informações dos Pokémons',
 					technologies: ['react', 'next.js'],
 					vercelLink: 'https://pokemon-next-lake.vercel.app/',
@@ -87,8 +86,7 @@ export const load = (async () => {
 				},
 				resume: {
 					name: 'Currículo',
-					image:
-						'https://raw.githubusercontent.com/anavollu/curriculo-ana/main/static/pagina_desktop.png',
+					image: '/site-curriculo.png',
 					description: 'Site com minhas informações profissionais e formação',
 					technologies: ['svelte', 'tailwind'],
 					vercelLink: 'https://ana-vollu.vercel.app/',
@@ -98,14 +96,22 @@ export const load = (async () => {
 				},
 				cynthia: {
 					name: 'Cynthia Vollu',
-					image:
-						'https://raw.githubusercontent.com/anavollu/site-cynthia/main/figma-images/pagina_desktop.png',
+					image: '/site-cynthia-vollu.png',
 					description: 'Site para maquiadora e hair stylist Cynthia Vollu',
 					technologies: ['svelte', 'tailwind'],
 					vercelLink: 'https://cynthia-vollu.vercel.app/',
 					gitHubLink: 'https://github.com/anavollu/site-cynthia',
 					figmaLink:
 						'https://www.figma.com/file/9lUb0kqCM9ijs5DLALz5sl/Site-Cynthia-Vollu?node-id=117-18&t=NMsaNu5T9fbAPkTG-0'
+				},
+				felipeJader: {
+					name: 'Dr. Felipe Jader',
+					image: '/site-felipe-jader.png',
+					description: 'Site profissional para o ortopedista Felipe Jader',
+					technologies: ['sveltekit', 'tailwind'],
+					vercelLink: 'https://drfelipejader.com.br/',
+					gitHubLink: '',
+					figmaLink: ''
 				}
 			},
 			experience: {
