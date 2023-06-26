@@ -9,7 +9,8 @@
 		<a href="/projetos/{path}" class="w-full">
 			<div class="relative h-[250px] w-full overflow-y-hidden">
 				<img
-					class="absolute top-0 h-auto w-full rounded-lg hover:animate-slide"
+					id="project-image"
+					class="absolute top-0 h-auto w-full rounded-lg"
 					src={image}
 					alt="Preview do site"
 				/>
@@ -18,3 +19,18 @@
 		</a>
 	</button>
 </div>
+
+<style>
+	#project-image:hover {
+		animation: slide 5s linear;
+	}
+
+	@keyframes slide {
+		from {
+			top: 0%;
+		}
+		to {
+			top: -300%;
+		}
+	}
+</style>

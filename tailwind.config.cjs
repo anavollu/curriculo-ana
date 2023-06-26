@@ -27,7 +27,7 @@ module.exports = {
 			widest: '.3em'
 		},
 		animation: {
-			slide: 'slide 3s linear infinite'
+			slide: 'slide 3s linear'
 		},
 		keyframes: {
 			slide: {
