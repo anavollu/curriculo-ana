@@ -2,7 +2,7 @@
 	import '../app.css';
 	import { page } from '$app/stores';
 	import redLine from '$lib/assets/red-line.svg';
-	import homeBg from '$lib/assets/home-bg.svg';
+	import homeBg from '$lib/assets/home-bg.png?w=1920&h=563&format=webp';
 	import Menu from './menu.svelte';
 	import Button from './button.svelte';
 	import type { LayoutData } from './$types';
@@ -36,7 +36,7 @@
 				{:else}
 					<div class="flex gap-1 lg:gap-3">
 						<button
-							class="border-1 w-[100px] rounded-[35px] border border-blue py-3 px-4 text-center font-poppins text-xs uppercase leading-4 text-blue hover:border-darkblue hover:text-darkblue lg:w-[135px] lg:rounded-[28.58px] lg:py-4 lg:text-[14px]"
+							class="border-1 w-[100px] rounded-[35px] border border-blue px-4 py-3 text-center font-poppins text-xs uppercase leading-4 text-blue hover:border-darkblue hover:text-darkblue lg:w-[135px] lg:rounded-[28.58px] lg:py-4 lg:text-[14px]"
 							on:click={() => {
 								if (history.length <= 1) {
 									window.location.pathname = '/';
@@ -46,7 +46,7 @@
 							}}>Voltar</button
 						>
 						<button
-							class="w-[100px] rounded-[35px] bg-blue py-3 px-4 text-center font-poppins text-xs uppercase leading-4 text-offwhite hover:bg-darkblue lg:w-[135px] lg:rounded-[28.58px] lg:py-4 lg:text-[14px]"
+							class="w-[100px] rounded-[35px] bg-blue px-4 py-3 text-center font-poppins text-xs uppercase leading-4 text-offwhite hover:bg-darkblue lg:w-[135px] lg:rounded-[28.58px] lg:py-4 lg:text-[14px]"
 							on:click={() => {
 								window.print();
 							}}>Imprimir</button
