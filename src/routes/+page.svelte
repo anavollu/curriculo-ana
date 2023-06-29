@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { LayoutServerData } from './$types';
-	import desktopImage from '$lib/assets/home-desktop-image.svg';
+	import desktopImage from '$lib/assets/home-desktop-image.png?w=425&h=297&format=webp';
 	import Button from './button.svelte';
 
 	export let data: LayoutServerData;
