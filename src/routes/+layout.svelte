@@ -2,6 +2,7 @@
 	import '../app.css';
 	import { page } from '$app/stores';
 	import redLine from '$lib/assets/red-line.svg';
+	// @ts-ignore
 	import homeBg from '$lib/assets/home-bg.png?w=1920&h=563&format=webp';
 	import Menu from './menu.svelte';
 	import Button from './button.svelte';
