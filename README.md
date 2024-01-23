@@ -25,6 +25,7 @@ Atualizando...
 - [ ] Colocar nova experiência
 - [ ] Alterar carousel de habilidades
 - [ ] Colocar active nos botões do menu
+- [ ] Atualizar imagem do site do Felipe
 - [ ] Ajustar tamanho/qualidade das imagens
 
 </br>
