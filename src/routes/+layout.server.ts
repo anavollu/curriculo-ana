@@ -17,6 +17,8 @@ import dockerIcon from '$lib/assets/docker-icon.svg';
 import gitIcon from '$lib/assets/git-icon.svg';
 import svelteIcon from '$lib/assets/svelte-icon.svg';
 import tailwindIcon from '$lib/assets/tailwind-icon.svg';
+import awsIcon from '$lib/assets/aws-icon.svg';
+import htmxIcon from '$lib/assets/htmx-icon.svg';
 
 const paths: Record<string, { name: string }> = {
 	'/': { name: 'Home' },
@@ -52,22 +54,22 @@ export const load = (async () => {
 						{ name: 'html', icon: htmlIcon },
 						{ name: 'css', icon: cssIcon },
 						{ name: 'javascript', icon: javascriptIcon },
-						{ name: 'react', icon: reactIcon },
-						{ name: 'next.js', icon: nextJsIcon }
-					],
-					conhecimento_básico: [
-						{ name: 'node.js', icon: nodeJsIcon },
-						{ name: 'golang', icon: golangIcon },
-						{ name: 'graphql', icon: graphqlIcon }
-					],
-					estudando: [
 						{ name: 'svelte', icon: svelteIcon },
 						{ name: 'tailwind', icon: tailwindIcon }
+					],
+					conhecimento_básico: [
+						{ name: 'next.js', icon: nextJsIcon },
+						{ name: 'node.js', icon: nodeJsIcon },
+						{ name: 'graphql', icon: graphqlIcon },
+						{ name: 'aws', icon: awsIcon },
+						{ name: 'htmx', icon: htmxIcon },
+						{ name: 'react', icon: reactIcon }
 					],
 					outros: [
 						{ name: 'mongoDB', icon: mongodbIcon },
 						{ name: 'postgreSQL', icon: postgresqlIcon },
 						{ name: 'docker', icon: dockerIcon },
+						{ name: 'golang', icon: golangIcon },
 						{ name: 'git', icon: gitIcon }
 					]
 				}
