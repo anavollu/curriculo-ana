@@ -3,6 +3,23 @@
 	export let name: string;
 	export let image: string;
 
+	const pictures = import.meta.glob('$lib/assets/projects-images/*.png', {
+		query: { format: 'webp', width: '200;400;600;1200' }
+	});
+
+	for (const pic in pictures) {
+		pictures[pic]().then((render) => {
+			let arr = [];
+			arr.push(image, Object.entries(render));
+			console.log(arr);
+		});
+	}
+
+	// const viteImagePath = Object.keys(pictures).find((el) => el.endsWith(image));
+
+	// const viteImage = pictures.viteImagePath;
+	// console.log(Object.entries(pictures));
+
 	let imgHeight: number;
 	let imgWidth: number;
 	let parentWidth: number;
