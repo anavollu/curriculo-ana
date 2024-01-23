@@ -20,6 +20,12 @@
 - [x] Fazer página Currículo
 - [x] Fazer responsividade desktop/tablet
 - [x] Alterar tamanho fixo da imagem na home page para dinâmico
+Atualizando...
+- [x] Alterar domínio
+- [ ] Colocar nova experiência
+- [ ] Alterar carousel de habilidades
+- [ ] Colocar active nos botões do menu
+- [ ] Ajustar tamanho/qualidade das imagens
 
 </br>
 
