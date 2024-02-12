@@ -91,7 +91,7 @@ export const load = (async () => {
 					image: '/site-curriculo.png',
 					description: 'Site com minhas informações profissionais e formação',
 					technologies: ['svelte', 'tailwind'],
-					vercelLink: 'https://ana-vollu.vercel.app/',
+					vercelLink: 'https://anavollu.com/',
 					gitHubLink: 'https://github.com/anavollu/curriculo-ana',
 					figmaLink:
 						'https://www.figma.com/file/AR93wnXDPmoCPfwxui0I68/Resume-Ana-Carolina-Vollu?node-id=92%3A1329&t=ypkH6oXutK9UXVdM-1'
@@ -122,17 +122,24 @@ export const load = (async () => {
 					company: '',
 					position: 'Freelancer em desenvolvimento',
 					description:
-						'Desenvolvimento e manutenção de sites com tecnologias Javascript, React, MongoDB, Git, Wordpress. Vi um pouco de Golang, GraphQL e GCP.',
-					year: '2022-2023'
+						'Desenvolvimento e manutenção de sites com tecnologias Javascript, React, MongoDB, Git, Wordpress, Svelte, Tailwind. Vi um pouco de Golang, GraphQL e GCP.',
+					year: '2022-2024'
 				},
 				two: {
+					company: 'Sensor Watch',
+					position: 'Desenvolvedora fullstack',
+					description:
+						'Desenvolvimento de aplicação com tecnologias Golang, HTMX, Tailwind, PSQL, Git, AWS.',
+					year: '2023'
+				},
+				three: {
 					company: 'IBM',
 					position: 'Estagiária e Analista de BI',
 					description:
 						'Desenvolvimento de interfaces para integração de sistemas e testes unitários no Informatica PowerCenter, SQL, elaboração de documento técnico do que será desenvolvido, shell script, metodologia Agile.',
 					year: '2020-2021'
 				},
-				three: {
+				four: {
 					company: 'Fundação Euclides da Cunha',
 					position: 'Bolsista e Auxiliar de Tecnologia da Informação',
 					description:
