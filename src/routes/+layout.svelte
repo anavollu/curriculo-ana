@@ -88,7 +88,7 @@
 		<div class="my-[29px] flex flex-col items-center justify-between px-5 lg:min-h-[78vh]">
 			{#if !isHome}
 				<div class="mb-8 flex flex-col text-center">
-					<p class="font-poppins text-3xl capitalize">
+					<p class="font-poppins text-3xl capitalize" id="page-name-id">
 						{pageName}
 					</p>
 					<img src={redLine} alt="Linha vermelha" />
