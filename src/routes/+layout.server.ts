@@ -19,6 +19,8 @@ import svelteIcon from '$lib/assets/svelte-icon.svg';
 import tailwindIcon from '$lib/assets/tailwind-icon.svg';
 import awsIcon from '$lib/assets/aws-icon.svg';
 import htmxIcon from '$lib/assets/htmx-icon.svg';
+import matomoIcon from '$lib/assets/logo-matomo.svg';
+import gtmIcon from '$lib/assets/logo-gtm.svg';
 
 const paths: Record<string, { name: string }> = {
 	'/': { name: 'Home' },
@@ -70,7 +72,9 @@ export const load = (async () => {
 						{ name: 'postgreSQL', icon: postgresqlIcon },
 						{ name: 'docker', icon: dockerIcon },
 						{ name: 'golang', icon: golangIcon },
-						{ name: 'git', icon: gitIcon }
+						{ name: 'git', icon: gitIcon },
+						{ name: 'matomo', icon: matomoIcon },
+						{ name: 'google tag', icon: gtmIcon }
 					]
 				}
 			},
