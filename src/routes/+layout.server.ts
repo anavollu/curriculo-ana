@@ -37,7 +37,7 @@ export const load = (async () => {
 			about: {
 				title: 'Sobre mim',
 				description:
-					'Iniciei minha carreira em TI na área de suporte. Trabalhei na área de dados com ETL, integração de sistemas. Decidi mudar de carreira e iniciar na programação. Hoje estou aprendendo Svelte e Tailwind.'
+					'Minha trajetória profissional começou na área de suporte em TI, onde desenvolvi habilidades em resolução de problemas e gestão de sistemas. Em seguida, trabalhei com dados, focando em ETL e integração de sistemas, o que me proporcionou a compreensão de processos e análise de informações. Em 2022, fiz a transição para a programação e, atualmente, estou estudando sobre modelos de linguagem (LLMs) e chatbots.'
 			},
 			home: {
 				title: 'Ana Carolina Vollu',
@@ -122,28 +122,28 @@ export const load = (async () => {
 					company: '',
 					position: 'Freelancer em desenvolvimento',
 					description:
-						'Desenvolvimento e manutenção de sites com tecnologias Javascript, React, MongoDB, Git, Wordpress, Svelte, Tailwind. Vi um pouco de Golang, GraphQL e GCP.',
-					year: '2022-2024'
+						'Desenvolvimento e manutenção de sites: Conhecimento em tecnologias como JavaScript, React, MongoDB, Git, WordPress, Svelte e Tailwind CSS. Conhecimento adicional em Golang, GraphQL e Google Cloud Platform (GCP). Implementação de Tags e Scripts: Configuração e implementação de tags de rastreamento e scripts em websites para monitoramento e análise de dados, utilizando ferramentas como Google Tag Manager, Google Analytics e outros sistemas de gerenciamento de tags. Envio de Conversões via Postbacks: Integração de postbacks para envio de conversões e eventos para plataformas de marketing e análise e rastreabilidade de campanhas.',
+					year: '2022-atualmente'
 				},
 				two: {
 					company: 'Sensor Watch',
 					position: 'Desenvolvedora fullstack',
 					description:
-						'Desenvolvimento de aplicação com tecnologias Golang, HTMX, Tailwind, PSQL, Git, AWS.',
+						'Projeto e implementação de soluções utilizando tecnologias como Golang, HTMX, Tailwind CSS, PostgreSQL (PSQL), Git e AWS.',
 					year: '2023'
 				},
 				three: {
 					company: 'IBM',
 					position: 'Estagiária e Analista de BI',
 					description:
-						'Desenvolvimento de interfaces para integração de sistemas e testes unitários no Informatica PowerCenter, SQL, elaboração de documento técnico do que será desenvolvido, shell script, metodologia Agile.',
+						'Compreensão das necessidades do cliente para criar interfaces de integração eficazes. Desenvolvimento e execução de testes unitários no Informatica PowerCenter e SQL. Elaboração de documentação técnica detalhada e criação de scripts em Shell. Aplicação de metodologia Agile para execução de projetos.',
 					year: '2020-2021'
 				},
 				four: {
 					company: 'Fundação Euclides da Cunha',
 					position: 'Bolsista e Auxiliar de Tecnologia da Informação',
 					description:
-						'Suporte a TI, uso do PowerBI para relatórios de desempenho da equipe, uso do Redmine para acompanhamento e organização das atividades da equipe, metodologia Agile, estudo de melhores tecnologias para implementar na empresa como Google GSuite.',
+						'Fornecimento de suporte técnico, elaboração de relatórios simples de desempenho da equipe utilizando PowerBI. Utilização do Redmine para o acompanhamento e organização das atividades da equipe, com aplicação da metodologia Agile. Pesquisa de tecnologias para otimização dos processos da empresa, incluindo estudo de implementação de ferramentas como Google GSuite.',
 					year: '2017-2019'
 				}
 			},
