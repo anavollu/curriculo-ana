@@ -41,7 +41,7 @@ export const load = (async () => {
 			},
 			home: {
 				title: 'Ana Carolina Vollu',
-				description: 'Desenvolvedora front-end',
+				description: 'Desenvolvedora',
 				primaryButton: 'Projetos',
 				secondaryButton: 'Currículo',
 				menuItems: items,
