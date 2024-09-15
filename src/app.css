@@ -6,3 +6,11 @@ html,
 body {
 	height: 100%;
 }
+
+html::view-transition-old(nav-item-Projects) {
+	height: 100%;
+}
+
+html::view-transition-new(nav-item-Projects) {
+	height: 100%;
+}

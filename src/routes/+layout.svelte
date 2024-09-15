@@ -1,12 +1,14 @@
 <script lang="ts">
 	import '../app.css';
-	import { page } from '$app/stores';
+	import { navigating, page } from '$app/stores';
 	import redLine from '$lib/assets/red-line.svg';
-	// @ts-ignore
-	import homeBg from '$lib/assets/home-bg.png?w=1920&h=563&format=webp';
+	import homeBg from '$lib/assets/home-bg.png?w=1920&h=563&format=webp&imagetools';
 	import Menu from './menu.svelte';
 	import Button from './button.svelte';
 	import type { LayoutData } from './$types';
+	import { onNavigate } from '$app/navigation';
+	import { navigatingTo } from '$lib/store';
+	import { browser } from '$app/environment';
 
 	export let data: LayoutData;
 
@@ -14,7 +16,30 @@
 
 	$: basePath = '/' + $page.url.pathname.split('/')[1];
 	$: pageName = data.resume.home.menuPaths[basePath].name;
+
+	onNavigate((navigation) => {
+		// @ts-ignore
+		if (!document.startViewTransition) return;
+
+		if (browser) {
+			const to = navigation.to?.route.id;
+			if (to) navigatingTo.set(to);
+		}
+		return new Promise((resolve) => {
+			// @ts-ignore
+			document.startViewTransition(async () => {
+				resolve();
+				await navigation.complete;
+			});
+		});
+	});
 </script>
+
+<hr
+	class:hidden={!$navigating}
+	class="fixed inset-0 z-50 flex animate-pulse border-4 border-blue"
+	style="view-transition-name: navigating-loading;"
+/>
 
 <div class="flex min-h-full flex-col">
 	<div class="relative z-10 mx-auto w-full max-w-[1000px]">
@@ -63,7 +88,7 @@
 		<div class="my-[29px] flex flex-col items-center justify-between px-5 lg:min-h-[78vh]">
 			{#if !isHome}
 				<div class="mb-8 flex flex-col text-center">
-					<p class="font-poppins text-3xl capitalize">
+					<p class="font-poppins text-3xl capitalize" id="page-name-id">
 						{pageName}
 					</p>
 					<img src={redLine} alt="Linha vermelha" />

@@ -22,6 +22,16 @@
 - [x] Alterar tamanho fixo da imagem na home page para dinâmico
 
 </br>
+Atualizando...
+
+- [x] Alterar domínio
+- [ ] Colocar nova experiência
+- [x] Alterar carousel de habilidades
+- [x] Colocar active nos botões do menu
+- [ ] Atualizar imagem do site do Felipe
+- [ ] Ajustar tamanho/qualidade das imagens
+
+</br>
 
 ## <img src="https://cdn-icons-png.flaticon.com/24/3095/3095113.png" width="20" /> Bugs
 

@@ -13,16 +13,16 @@
 {#if browser}
 	<Carousel
 		particlesToShow={pageWidth >= 976 ? 3 : pageWidth >= 768 ? 2 : 1}
-		particlesToScroll={pageWidth >= 976 ? 2 : 1}
+		particlesToScroll={pageWidth >= 976 ? 3 : 1}
 		arrows={false}
 	>
 		{#each Object.entries(carouselItems) as [techName, techAbilities]}
 			<div class="flex justify-center">
 				<div
-					class="flex w-full flex-col items-center rounded-[20px] bg-gradient-to-tr from-candyblue pt-6 pb-32 md:w-[350px] lg:w-[300px]"
+					class="flex w-full flex-col items-center rounded-[20px] bg-gradient-to-tr from-candyblue pb-32 pt-6 md:w-[350px] lg:w-[300px]"
 				>
 					<p
-						class="mb-14 text-center font-poppins text-lg font-bold uppercase tracking-widest text-opacityblue"
+						class="mb-7 h-14 max-w-[300px] text-center font-poppins text-lg font-bold uppercase tracking-widest text-opacityblue"
 					>
 						{techName.replace('_', ' ')}
 					</p>
