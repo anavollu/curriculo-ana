@@ -5,10 +5,12 @@
 	import homeBg from '$lib/assets/home-bg.png?w=1920&h=563&format=webp&imagetools';
 	import Menu from './menu.svelte';
 	import Button from './button.svelte';
+	import { initializeChatbot } from './chatbot';
 	import type { LayoutData } from './$types';
 	import { onNavigate } from '$app/navigation';
 	import { navigatingTo } from '$lib/store';
 	import { browser } from '$app/environment';
+	import { onMount } from 'svelte';
 
 	export let data: LayoutData;
 
@@ -16,6 +18,10 @@
 
 	$: basePath = '/' + $page.url.pathname.split('/')[1];
 	$: pageName = data.resume.home.menuPaths[basePath].name;
+
+	onMount(() => {
+    initializeChatbot();
+  });
 
 	onNavigate((navigation) => {
 		// @ts-ignore
