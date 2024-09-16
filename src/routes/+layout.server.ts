@@ -82,7 +82,7 @@ export const load = (async () => {
 				title: 'Projetos',
 				pokemon: {
 					name: 'Pokémon Info App',
-					image: '/site-pokemon.png',
+					image: '/site-pokemon-small.png',
 					description: 'Site inspirado na pokédex para exibir informações dos Pokémons',
 					technologies: ['react', 'next.js'],
 					vercelLink: 'https://pokemon-next-lake.vercel.app/',
@@ -95,14 +95,14 @@ export const load = (async () => {
 					image: '/site-curriculo.png',
 					description: 'Site com minhas informações profissionais e formação',
 					technologies: ['svelte', 'tailwind'],
-					vercelLink: 'https://anavollu.com/',
+					vercelLink: 'https://anavollu.com.br/',
 					gitHubLink: 'https://github.com/anavollu/curriculo-ana',
 					figmaLink:
 						'https://www.figma.com/file/AR93wnXDPmoCPfwxui0I68/Resume-Ana-Carolina-Vollu?node-id=92%3A1329&t=ypkH6oXutK9UXVdM-1'
 				},
 				cynthia: {
 					name: 'Cynthia Vollu',
-					image: '/site-cynthia-vollu.png',
+					image: '/site-cynthia-vollu-small.png',
 					description: 'Site para maquiadora e hair stylist Cynthia Vollu',
 					technologies: ['svelte', 'tailwind'],
 					vercelLink: 'https://cynthia-vollu.vercel.app/',
@@ -112,7 +112,7 @@ export const load = (async () => {
 				},
 				felipeJader: {
 					name: 'Dr. Felipe Jader',
-					image: '/site-felipe-jader.png',
+					image: '/site-felipe-jader-small.png',
 					description: 'Site profissional para o ortopedista Felipe Jader',
 					technologies: ['sveltekit', 'tailwind'],
 					vercelLink: 'https://drfelipejader.com.br/',
