@@ -39,7 +39,7 @@ export const load = (async () => {
 			about: {
 				title: 'Sobre mim',
 				description:
-					'Minha trajetória profissional começou na área de suporte em TI, onde desenvolvi habilidades em resolução de problemas e gestão de sistemas. Em seguida, trabalhei com dados, focando em ETL e integração de sistemas, o que me proporcionou a compreensão de processos e análise de informações. Em 2022, fiz a transição para a programação e, atualmente, estou estudando sobre modelos de linguagem (LLMs) e chatbots.'
+					'Minha trajetória profissional começou na área de suporte em TI, onde desenvolvi habilidades em resolução de problemas e gestão de sistemas. Em seguida, trabalhei com dados, focando em ETL e integração de sistemas, o que me proporcionou a compreensão de processos e análise de informações. Em 2022, fiz a transição para a programação e, atualmente, desenvolvo landing pages e faço implementação de tags para rastreabilidade de campanhas de marketing e envio de conversões via postbacks/API.'
 			},
 			home: {
 				title: 'Ana Carolina Vollu',
@@ -107,8 +107,7 @@ export const load = (async () => {
 					technologies: ['svelte', 'tailwind'],
 					vercelLink: 'https://cynthia-vollu.vercel.app/',
 					gitHubLink: 'https://github.com/anavollu/site-cynthia',
-					figmaLink:
-						'https://www.figma.com/file/9lUb0kqCM9ijs5DLALz5sl/Site-Cynthia-Vollu?node-id=117-18&t=NMsaNu5T9fbAPkTG-0'
+					figmaLink: ''
 				},
 				felipeJader: {
 					name: 'Dr. Felipe Jader',
@@ -116,6 +115,15 @@ export const load = (async () => {
 					description: 'Site profissional para o ortopedista Felipe Jader',
 					technologies: ['sveltekit', 'tailwind'],
 					vercelLink: 'https://drfelipejader.com.br/',
+					gitHubLink: '',
+					figmaLink: ''
+				},
+				indexaNetwork: {
+					name: 'Indexa Network',
+					image: '/site-indexa.png',
+					description: 'Site profissional para a empresa Indexa Network',
+					technologies: ['react', 'next.js'],
+					vercelLink: 'https://indexanetwork.com/',
 					gitHubLink: '',
 					figmaLink: ''
 				}
