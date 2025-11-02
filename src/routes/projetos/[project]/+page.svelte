@@ -1,8 +1,10 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import ProjectCard from '../project-card.svelte';
-	export let data;
-	$: path = $page.url.pathname.replace('/projetos/', '');
+
+	let { data } = $props();
+	
+	let path = $derived($page.url.pathname.replace('/projetos/', ''));
 
 	const { title, ...projects } = data.resume.projects;
 
@@ -10,7 +12,7 @@
 		return key in projects;
 	}
 
-	$: project = getProjectKey(path) ? projects[path] : null;
+	let project = $derived(getProjectKey(path) ? projects[path] : null);
 </script>
 
 {#if project}
@@ -27,7 +29,7 @@
 		<div class="mb-9 flex flex-col gap-1">
 			<p class="uppercase">Tecnologias</p>
 			<p class="text-sm text-black">
-				{project.technologies.map((str, i) => str.toUpperCase()).join(' | ')}
+				{project.technologies.map((str: string) => str.toUpperCase()).join(' | ')}
 			</p>
 		</div>
 		<div class="uppercase underline">

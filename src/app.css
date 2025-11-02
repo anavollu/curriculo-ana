@@ -1,6 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 976px;
+	--breakpoint-xl: 1440px;
+
+	--color-white: #ffffff;
+	--color-black: #000000;
+	--color-offwhite: #f1faee;
+	--color-opacityblue: rgba(69, 123, 157, 0.7);
+	--color-candyblue: #def2e9;
+	--color-lightblue: #a8dadc;
+	--color-blue: #457b9d;
+	--color-darkblue: #1d3557;
+	--color-red: #e63946;
+
+	--font-family-poppins: Poppins, sans-serif;
+	--font-family-inter: Inter, sans-serif;
+
+	--letter-spacing-wider: 0.1em;
+	--letter-spacing-widest: 0.3em;
+}  
 
 html,
 body {

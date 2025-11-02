@@ -3,7 +3,7 @@
 	import desktopImage from '$lib/assets/home-desktop-image.png?w=553&h=387&format=webp&imagetools';
 	import Button from './button.svelte';
 
-	export let data: LayoutServerData;
+	let { data }: { data: LayoutServerData } = $props();
 </script>
 
 <div
@@ -19,7 +19,7 @@
 				{data.resume.home.title}
 			</p>
 		</div>
-		<div class="max-w-[300px] flex-grow lg:max-w-max">
+		<div class="max-w-[300px] grow lg:max-w-max">
 			<img src={desktopImage} alt="Imagem de um computador" />
 		</div>
 	</div>
@@ -30,7 +30,9 @@
 </div>
 
 <style lang="postcss">
+	@reference "../app.css";
+
 	:global(html:has(#home-container)) {
-		@apply bg-lightblue;
+		background-color: var(--color-lightblue);
 	}
 </style>

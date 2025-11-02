@@ -1,10 +1,12 @@
 <script lang="ts">
-	export let path: string;
-	export let name: string;
-	export let image: string;
+	let { path, name, image }: {
+		path: string;
+		name: string;
+		image: string;
+	} = $props();
 </script>
 
-<div class="flex flex-col {$$props.class}">
+<div class="flex flex-col">
 	<button class="flex flex-col text-left">
 		<a href="/projetos/{path}" class="w-full">
 			<div

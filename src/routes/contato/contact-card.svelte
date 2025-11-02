@@ -1,10 +1,19 @@
 <script lang="ts">
-	export let type: 'link' | 'copy' = 'link';
-	export let info: string;
-	export let link: string;
-	export let icon: string;
-	export let description: string;
-	export let isResumePage: boolean;
+	let { 
+		type = 'link', 
+		info, 
+		link, 
+		icon, 
+		description, 
+		isResumePage 
+	}: {
+		type?: 'link' | 'copy';
+		info: string;
+		link: string;
+		icon: string;
+		description: string;
+		isResumePage: boolean;
+	} = $props();
 </script>
 
 <div class="relative flex w-full">
@@ -37,7 +46,7 @@
 			{:else}
 				<button
 					class="font-poppins text-sm tracking-widest text-red"
-					on:click={() => {
+					onclick={() => {
 						navigator.clipboard.writeText(info);
 					}}>{description}</button
 				>

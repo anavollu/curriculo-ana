@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ContactCard from './contact-card.svelte';
-	export let data;
+	let { data } = $props();
 	const { title, ...contact } = data.resume.contact;
 </script>
 

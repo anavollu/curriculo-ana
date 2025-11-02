@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ProjectCard from './project-card.svelte';
-	export let data;
+	let { data } = $props();
 	const { title, ...projects } = data.resume.projects;
 </script>
 

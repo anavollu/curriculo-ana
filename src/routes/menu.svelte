@@ -4,17 +4,19 @@
 	import { page } from '$app/stores';
 	import { navigatingTo } from '$lib/store';
 
-	export let menuOpen = false;
-	export let pages: {
-		name: string;
-		path: string;
-	}[];
+	let { menuOpen = $bindable(false), pages }: {
+		menuOpen?: boolean;
+		pages: {
+			name: string;
+			path: string;
+		}[];
+	} = $props();
 </script>
 
 <!-- Small devices -->
 <div class="flex self-start lg:hidden">
 	<button
-		on:click={() => {
+		onclick={() => {
 			menuOpen = !menuOpen;
 		}}
 		class="rounded-[10px] bg-offwhite p-[11px] active:bg-blue"
@@ -39,7 +41,7 @@
 					<div
 						class="absolute inset-0 -z-10 h-full w-full rounded-[30px] border border-blue"
 						style="view-transition-name: nav-item-Projects;"
-					/>
+					></div>
 				{/if}
 				{p.name}
 			</a>

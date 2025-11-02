@@ -1,7 +1,7 @@
 <script lang="ts">
 	import ContactCard from '../contato/contact-card.svelte';
 
-	export let data;
+	let { data } = $props();
 	const about = data.resume.about;
 	const home = data.resume.home;
 	const abilityTitle = data.resume.ability.title;
@@ -30,11 +30,11 @@
 		<div class="grid grid-cols-1">
 			{#each Object.values(experience) as experienceItem}
 				<div
-					class="flex items-center gap-2 border-l-[1px] border-lightblue py-1 lg:items-start lg:border-none"
+					class="flex items-center gap-2 border-l border-lightblue py-1 lg:items-start lg:border-none"
 				>
 					<div class="flex items-center lg:hidden">
-						<div class="h-[1px] w-[20px] bg-lightblue" />
-						<div class="h-[10px] w-[10px] rounded-full bg-lightblue" />
+						<div class="h-px w-[20px] bg-lightblue"></div>
+						<div class="h-[10px] w-[10px] rounded-full bg-lightblue"></div>
 					</div>
 					<div class="flex flex-col gap-2 p-2 lg:gap-3 lg:px-0">
 						<p class="text-sm font-medium uppercase leading-[15px] tracking-wider text-darkblue">
@@ -66,11 +66,11 @@
 		<div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-y-4 lg:gap-x-8">
 			{#each Object.values(education) as educationItem}
 				<div
-					class="flex items-center gap-2 border-l-[1px] border-lightblue py-1 lg:items-start lg:border-none"
+					class="flex items-center gap-2 border-l border-lightblue py-1 lg:items-start lg:border-none"
 				>
 					<div class="flex items-center lg:hidden">
-						<div class="h-[1px] w-[20px] bg-lightblue" />
-						<div class="h-[10px] w-[10px] rounded-full bg-lightblue" />
+						<div class="h-px w-[20px] bg-lightblue">  </div>
+						<div class="h-[10px] w-[10px] rounded-full bg-lightblue"></div>
 					</div>
 					<div class="flex flex-col gap-2 p-2 lg:px-0">
 						<p class="text-sm font-medium uppercase leading-[15px] tracking-widest text-darkblue">

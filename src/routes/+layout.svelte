@@ -11,13 +11,14 @@
 	import { navigatingTo } from '$lib/store';
 	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
+	import type { Snippet } from 'svelte';
 
-	export let data: LayoutData;
+	let { data, children }: { data: LayoutData; children: Snippet } = $props();
 
-	$: isHome = $page.url.pathname === '/';
+	let isHome = $derived($page.url.pathname === '/');
 
-	$: basePath = '/' + $page.url.pathname.split('/')[1];
-	$: pageName = data.resume.home.menuPaths[basePath].name;
+	let basePath = $derived('/' + $page.url.pathname.split('/')[1]);
+	let pageName = $derived(data.resume.home.menuPaths[basePath].name);
 
 	onMount(() => {
     initializeChatbot();
@@ -68,8 +69,8 @@
 				{:else}
 					<div class="flex gap-1 lg:gap-3">
 						<button
-							class="border-1 w-[100px] rounded-[35px] border border-blue px-4 py-3 text-center font-poppins text-xs uppercase leading-4 text-blue hover:border-darkblue hover:text-darkblue lg:w-[135px] lg:rounded-[28.58px] lg:py-4 lg:text-[14px]"
-							on:click={() => {
+							class="border w-[100px] rounded-[35px] border-blue px-4 py-3 text-center font-poppins text-xs uppercase leading-4 text-blue hover:border-darkblue hover:text-darkblue lg:w-[135px] lg:rounded-[28.58px] lg:py-4 lg:text-[14px]"
+							onclick={() => {
 								if (history.length <= 1) {
 									window.location.pathname = '/';
 									return;
@@ -79,7 +80,7 @@
 						>
 						<button
 							class="w-[100px] rounded-[35px] bg-blue px-4 py-3 text-center font-poppins text-xs uppercase leading-4 text-offwhite hover:bg-darkblue lg:w-[135px] lg:rounded-[28.58px] lg:py-4 lg:text-[14px]"
-							on:click={() => {
+							onclick={() => {
 								window.print();
 							}}>Imprimir</button
 						>
@@ -87,7 +88,8 @@
 				{/if}
 			{/if}
 			{#if isHome}
-				<div class="hidden lg:inline lg:h-12" />
+				<div class="hidden lg:inline lg:h-12">
+				</div>
 			{/if}
 		</div>
 
@@ -100,7 +102,7 @@
 					<img src={redLine} alt="Linha vermelha" />
 				</div>
 			{/if}
-			<slot />
+			{@render children()}
 			<div class="mt-3 hidden lg:inline">
 				<Menu pages={data.resume.home.menuItems} />
 			</div>
@@ -112,7 +114,9 @@
 </div>
 
 <style lang="postcss">
+	@reference "../app.css";
+
 	:global(html) {
-		@apply bg-offwhite;
+		background-color: var(--color-offwhite);
 	}
 </style>

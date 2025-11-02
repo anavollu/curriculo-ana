@@ -1,7 +1,5 @@
 <script>
-	export let label = '';
-	export let size = 'small';
-	export let page = '/';
+	let { label = '', size = 'small', page = '/' } = $props();
 </script>
 
 {#if size == 'large'}

@@ -2,10 +2,10 @@
 	import Carousel from 'svelte-carousel';
 	import { browser } from '$app/environment';
 
-	export let data;
+	let { data } = $props();
 	const carouselItems = data.resume.ability.carouselItems;
 
-	let pageWidth: number;
+	let pageWidth = $state<number>(0);
 </script>
 
 <svelte:window bind:innerWidth={pageWidth} />

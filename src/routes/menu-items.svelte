@@ -1,9 +1,10 @@
 <script lang="ts">
 	import { slide } from 'svelte/transition';
 
-	export let pages: { name: string; path: string }[];
-
-	export let menuOpen = false;
+	let { pages, menuOpen = $bindable(false) }: {
+		pages: { name: string; path: string }[];
+		menuOpen?: boolean;
+	} = $props();
 </script>
 
 {#if menuOpen}
@@ -15,7 +16,7 @@
 			{#if name !== 'Currículo'}
 				<a href={path}>
 					<button
-						on:click={() => {
+						onclick={() => {
 							menuOpen = !menuOpen;
 						}}
 						class="w-full rounded-[10px] py-[10.5px] px-[25px] font-poppins text-lg text-blue hover:bg-blue hover:text-candyblue"
